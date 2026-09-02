@@ -1,0 +1,95 @@
+name: Validate bridge and adjoint in R
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Check out validation repository
+        uses: actions/checkout@v4
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Clone cmbridge package
+        run: |
+          git clone --depth 1 https://github.com/idiazst/cmbridge-validation.git _cmbridge_package
+          mkdir -p "results/run-${GITHUB_RUN_ID}"
+          git -C _cmbridge_package rev-parse HEAD > "results/run-${GITHUB_RUN_ID}/cmbridge_commit.txt"
+
+      - name: Install cmbridge
+        run: R CMD INSTALL _cmbridge_package
+
+      - name: Record R session
+        shell: Rscript {0}
+        run: |
+          dir.create("results/run-${{ github.run_id }}", recursive = TRUE, showWarnings = FALSE)
+          writeLines(capture.output(sessionInfo()),
+                     "results/run-${{ github.run_id }}/sessionInfo.txt")
+
+      - name: Validate bridge
+        id: bridge
+        continue-on-error: true
+        run: |
+          Rscript scripts/validate_bridge.R "results/run-${GITHUB_RUN_ID}/bridge"
+
+      - name: Validate adjoint
+        id: adjoint
+        continue-on-error: true
+        run: |
+          Rscript scripts/validate_adjoint.R "results/run-${GITHUB_RUN_ID}/adjoint"
+
+      - name: Record outcomes
+        if: always()
+        run: |
+          {
+            echo "github_run_id=${GITHUB_RUN_ID}"
+            echo "bridge_outcome=${{ steps.bridge.outcome }}"
+            echo "adjoint_outcome=${{ steps.adjoint.outcome }}"
+          } > "results/run-${GITHUB_RUN_ID}/outcomes.txt"
+          echo "${GITHUB_RUN_ID}" > results/latest_run.txt
+
+      - name: Show numerical summaries
+        if: always()
+        run: |
+          echo "=== Bridge ==="
+          cat "results/run-${GITHUB_RUN_ID}/bridge/validation_summary.csv" || true
+          echo
+          echo "=== Adjoint ==="
+          cat "results/run-${GITHUB_RUN_ID}/adjoint/validation_summary.csv" || true
+
+      - name: Upload run artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cmbridge-validation-${{ github.run_id }}
+          path: results/run-${{ github.run_id }}/
+          if-no-files-found: warn
+
+      - name: Commit results to repository
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add results/
+          if ! git diff --cached --quiet; then
+            git commit -m "Store R validation results for run ${GITHUB_RUN_ID} [skip ci]"
+            git push
+          fi
+
+      - name: Fail workflow if either validation failed
+        if: steps.bridge.outcome != 'success' || steps.adjoint.outcome != 'success'
+        run: |
+          echo "At least one validation failed."
+          echo "Bridge:  ${{ steps.bridge.outcome }}"
+          echo "Adjoint: ${{ steps.adjoint.outcome }}"
+          exit 1
