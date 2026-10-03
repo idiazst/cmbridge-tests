@@ -164,6 +164,9 @@ for (scenario_name in names(scenarios)) for (problem in c("bridge", "adjoint")) 
   legend("topright", c("Truth", "Ensemble"), col = c("black", "blue"), lty = c(1, 2), bty = "n")
 }
 dev.off()
+script_file <- sub("^--file=", "", commandArgs()[grepl("^--file=", commandArgs())])
+source(file.path(dirname(script_file), "plot_ensemble_truth.R"))
+plot_ensemble_truth(out_dir)
 print(summary, row.names = FALSE)
 
 # Prespecified acceptance criteria are applied to every largest-sample seed.

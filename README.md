@@ -59,6 +59,30 @@ For a shorter diagnostic, set `CMBRIDGE_ENSEMBLE_SIZES` and
 `CMBRIDGE_ENSEMBLE_SEEDS` to comma-separated values. Acceptance criteria are
 applied to the largest requested size.
 
+### Ensemble truth versus estimate (y = x)
+
+Each ensemble validation also writes `truth_vs_estimate.pdf` and a PNG preview.
+The four panels cover bridge and adjoint ensembles under cubic and Gaussian
+kernel truth. True function values are on the x-axis and ensemble predictions
+on the y-axis, with equal axis scales and a dashed y = x reference line.
+Each panel uses the 301 evaluation-grid points at the largest sample size and
+the first configured seed, matching the individual-learner diagnostic.
+The displayed RMSE measures recovery on that grid; the existing acceptance
+checks still cover every seed at the largest sample size.
+
+The plots can also be regenerated from saved predictions without refitting:
+
+```bash
+Rscript scripts/plot_ensemble_truth.R results/run-37145547540/ensemble
+```
+
+The plots added to that run were generated afterward from its unchanged saved
+predictions (n = 200,000, seed = 1), using package commit `f7fed47`.
+
+![Ensemble estimates against truth](results/run-37145547540/ensemble/truth_vs_estimate.png)
+
+[Download the PDF](results/run-37145547540/ensemble/truth_vs_estimate.pdf).
+
 ## Run again
 
 From a terminal:
