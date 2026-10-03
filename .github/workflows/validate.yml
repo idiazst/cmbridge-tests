@@ -1,7 +1,16 @@
-name: Validate bridge and adjoint in R
+name: Validate bridge, adjoint, and ensembles in R
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/validate.yml'
+
+concurrency:
+  group: cmbridge-validation-${{ github.ref }}
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -22,7 +31,7 @@ jobs:
 
       - name: Clone cmbridge package
         run: |
-          git clone --depth 1 https://github.com/idiazst/cmbridge-validation.git _cmbridge_package
+          git clone --depth 1 https://github.com/idiazst/cmbridge.git _cmbridge_package
           mkdir -p "results/run-${GITHUB_RUN_ID}"
           git -C _cmbridge_package rev-parse HEAD > "results/run-${GITHUB_RUN_ID}/cmbridge_commit.txt"
 
@@ -48,6 +57,12 @@ jobs:
         run: |
           Rscript scripts/validate_adjoint.R "results/run-${GITHUB_RUN_ID}/adjoint"
 
+      - name: Validate ensemble selection
+        id: ensemble
+        continue-on-error: true
+        run: |
+          Rscript scripts/validate_ensemble.R "results/run-${GITHUB_RUN_ID}/ensemble"
+
       - name: Record outcomes
         if: always()
         run: |
@@ -55,6 +70,7 @@ jobs:
             echo "github_run_id=${GITHUB_RUN_ID}"
             echo "bridge_outcome=${{ steps.bridge.outcome }}"
             echo "adjoint_outcome=${{ steps.adjoint.outcome }}"
+            echo "ensemble_outcome=${{ steps.ensemble.outcome }}"
           } > "results/run-${GITHUB_RUN_ID}/outcomes.txt"
           echo "${GITHUB_RUN_ID}" > results/latest_run.txt
 
@@ -66,6 +82,7 @@ jobs:
           echo
           echo "=== Adjoint ==="
           cat "results/run-${GITHUB_RUN_ID}/adjoint/validation_summary.csv" || true
+          cat "results/run-${GITHUB_RUN_ID}/ensemble/validation_summary.csv" || true
 
       - name: Upload run artifacts
         if: always()
@@ -86,10 +103,11 @@ jobs:
             git push
           fi
 
-      - name: Fail workflow if either validation failed
-        if: steps.bridge.outcome != 'success' || steps.adjoint.outcome != 'success'
+      - name: Fail workflow if any validation failed
+        if: steps.bridge.outcome != 'success' || steps.adjoint.outcome != 'success' || steps.ensemble.outcome != 'success'
         run: |
           echo "At least one validation failed."
           echo "Bridge:  ${{ steps.bridge.outcome }}"
           echo "Adjoint: ${{ steps.adjoint.outcome }}"
+          echo "Ensemble: ${{ steps.ensemble.outcome }}"
           exit 1
