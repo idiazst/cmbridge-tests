@@ -1,0 +1,14 @@
+scale,loss,grid_round,selected,failed,failure,scored_rows,paired_rows,informative,fold,bridge_specification,fit_key,horizon,fitting_n,candidate,mechanism,n,replicate,seed
+1e-12,Inf,2,FALSE,TRUE,scoring requires finite residuals on a nonempty validation sample.,28,21,TRUE,1,1,1cc3619a8bf4c24136a5086930b6eba8,1,55,sieve_md,binary_longitudinal,4000,6,5103006
+1.77827941003892e-12,Inf,2,FALSE,TRUE,scoring requires finite residuals on a nonempty validation sample.,28,21,TRUE,1,1,1cc3619a8bf4c24136a5086930b6eba8,1,55,sieve_md,binary_longitudinal,4000,6,5103006
+3.16227766016838e-12,Inf,2,FALSE,TRUE,Nonfinite penalty validation score.,28,21,TRUE,1,1,1cc3619a8bf4c24136a5086930b6eba8,1,55,sieve_md,binary_longitudinal,4000,6,5103006
+5.62341325190349e-12,Inf,2,FALSE,TRUE,Nonfinite penalty validation score.,28,21,TRUE,1,1,1cc3619a8bf4c24136a5086930b6eba8,1,55,sieve_md,binary_longitudinal,4000,6,5103006
+1e-12,Inf,2,FALSE,TRUE,scoring requires finite residuals on a nonempty validation sample.,55,53,TRUE,2,1,189e38af2285375714a0b8c27067f39e,1,55,sieve_md,binary_longitudinal,4000,6,5103006
+1.77827941003892e-12,Inf,2,FALSE,TRUE,scoring requires finite residuals on a nonempty validation sample.,55,53,TRUE,2,1,189e38af2285375714a0b8c27067f39e,1,55,sieve_md,binary_longitudinal,4000,6,5103006
+1e-12,Inf,2,FALSE,TRUE,scoring requires finite residuals on a nonempty validation sample.,55,53,TRUE,2,1,47371fad72d94cf25f9ae8256f55597f,1,111,sieve_md,binary_longitudinal,4000,6,5103006
+1.77827941003892e-12,Inf,2,FALSE,TRUE,scoring requires finite residuals on a nonempty validation sample.,55,53,TRUE,2,1,47371fad72d94cf25f9ae8256f55597f,1,111,sieve_md,binary_longitudinal,4000,6,5103006
+1e-14,Inf,4,FALSE,TRUE,Nonfinite penalty validation score.,56,52,TRUE,3,1,0d94fb0e1c211c404769a171fb89ddbd,1,111,sieve_md,binary_longitudinal,4000,6,5103006
+1e-12,Inf,2,FALSE,TRUE,scoring requires finite residuals on a nonempty validation sample.,28,18,TRUE,3,1,15f487d6144e6d238d2abe85a97d3cd9,1,55,sieve_md,binary_longitudinal,4000,6,5103006
+1.77827941003892e-12,Inf,2,FALSE,TRUE,scoring requires finite residuals on a nonempty validation sample.,28,18,TRUE,3,1,15f487d6144e6d238d2abe85a97d3cd9,1,55,sieve_md,binary_longitudinal,4000,6,5103006
+1e-14,Inf,4,FALSE,TRUE,Nonfinite penalty validation score.,56,52,TRUE,3,1,16477ecf6aa887952e9344ef8d545a94,1,56,sieve_md,binary_longitudinal,4000,6,5103006
+3.16227766016838e-12,Inf,2,FALSE,TRUE,scoring requires finite residuals on a nonempty validation sample.,27,24,TRUE,3,1,89236e7a3794569b705fa2ca08d923ff,1,55,sieve_md,binary_longitudinal,4000,6,5103006

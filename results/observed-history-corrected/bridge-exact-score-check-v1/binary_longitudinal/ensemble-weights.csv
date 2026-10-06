@@ -1,0 +1,10 @@
+mechanism,fold,candidate,weight
+binary_longitudinal,1,sieve_md,0.337417006182023
+binary_longitudinal,1,landweber,0.325021981807243
+binary_longitudinal,1,pmmr,0.337561012010734
+binary_longitudinal,2,sieve_md,0.320145718912571
+binary_longitudinal,2,landweber,0.342481034265456
+binary_longitudinal,2,pmmr,0.337373246821973
+binary_longitudinal,3,sieve_md,0.33648924479051
+binary_longitudinal,3,landweber,0.342084428628821
+binary_longitudinal,3,pmmr,0.32142632658067

@@ -1,0 +1,4 @@
+mechanism,fold,elapsed_seconds,raw_gram_maximum_difference,psd_adjustment,candidate_failures
+discrete_dose,1,30.496,3.46944695195361e-18,0.00255512540220932,0
+discrete_dose,2,29.1,4.77048955893622e-18,0.002414030694413,0
+discrete_dose,3,26.582,1.30104260698261e-18,0.00232834237938721,0

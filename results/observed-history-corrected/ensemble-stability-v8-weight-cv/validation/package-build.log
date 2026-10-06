@@ -1,0 +1,7 @@
+* checking for file ‘/Users/ivan/Projects/cmbridge-work/cmbridge/DESCRIPTION’ ... OK
+* preparing ‘cmbridge’:
+* checking DESCRIPTION meta-information ... OK
+* checking for LF line-endings in source and make files and shell scripts
+* checking for empty or unneeded directories
+Omitted ‘LazyData’ from DESCRIPTION
+* building ‘cmbridge_0.3.0.9021.tar.gz’

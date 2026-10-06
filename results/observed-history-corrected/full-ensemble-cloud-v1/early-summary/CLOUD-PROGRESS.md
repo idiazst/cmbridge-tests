@@ -1,6 +1,6 @@
 # Cloud study progress
 
-Updated 2026-10-06 06:21 UTC. **Partial results: 24 of 1,200 planned datasets.**
+Updated 2026-10-06 09:28 UTC (saved checkpoint count unchanged; long-stage artifacts have not uploaded). **Partial results: 24 of 1,200 planned datasets.**
 
 [Live computation](https://github.com/idiazst/cmbridge-tests/actions/runs/37417223244) uses the approved frozen fitting source and exact archived package versions. There are forty shards of thirty datasets, up to twenty simultaneous GitHub jobs and four R workers per job. Saved seeds, sample assignments, source fingerprints and four estimates per successful dataset are validated before aggregation. Mac timing checkpoints are kept separate.
 
@@ -19,6 +19,10 @@ Bias, confidence-interval coverage and convergence conclusions require the plann
 The full-support saturated adjoint class contains a valid solution, while a dictionary learned only from measured training combinations can fail to contain an exact solution across the whole population. The [saved Mac class and equation audit](https://github.com/idiazst/cmbridge-tests/blob/main/results/observed-history-corrected/full-ensemble-study-v2/diagnostic-evaluation/REPORT.md) documents this distinction. The current cloud run is preserved so that any later change can be assessed against the original version.
 
 The original pinned workflow has a known reporting-only fingerprint comparison error. A corrected standalone reporting workflow will verify and summarize all final checkpoints. This does not affect the running statistical fits. Package tests and source/split checks passed in preparation.
+
+At 09:28 UTC, twenty simulation jobs are active and twenty are queued. The 24 saved early checkpoints are the verified count; additional fits may have completed inside active jobs without uploading yet. First-wave checkpoint artifacts are expected around 10:21–10:39 UTC if the long stages reach their limits. Do not equate the artifact count with the number of fits completed inside running jobs.
+
+The current timing evidence suggests at least approximately nine additional hours if the observed lower-bound mean is representative, with an optimistic finish around 14:30 Eastern on October 6. Setup, interrupted attempts, uneven loads and still-pending numerical-dose timings can push completion later. A finish within twelve hours of launch is not established.
 
 ## Early batches that reached their limit
 

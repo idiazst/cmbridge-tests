@@ -1,0 +1,10 @@
+mechanism,fold,candidate,tolerance_reached
+discrete_dose,1,sieve_md,TRUE
+discrete_dose,1,landweber,TRUE
+discrete_dose,1,pmmr,TRUE
+discrete_dose,2,sieve_md,TRUE
+discrete_dose,2,landweber,TRUE
+discrete_dose,2,pmmr,TRUE
+discrete_dose,3,sieve_md,TRUE
+discrete_dose,3,landweber,TRUE
+discrete_dose,3,pmmr,TRUE

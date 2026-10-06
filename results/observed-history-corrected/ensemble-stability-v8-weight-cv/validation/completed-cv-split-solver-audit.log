@@ -1,0 +1,2 @@
+Error: all(solver_table$tolerance_reached) is not TRUE
+Execution halted
