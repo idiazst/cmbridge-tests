@@ -1,0 +1,4 @@
+passed=TRUE
+minimum_correct_weight=0.90
+maximum_ensemble_rmse=0.06
+ensemble_rmse_less_than_half_best_misspecified=TRUE
