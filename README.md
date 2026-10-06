@@ -96,3 +96,18 @@ Then inspect the newest run:
 ```bash
 gh run list --repo idiazst/cmbridge-tests --workflow validate.yml --limit 5
 ```
+
+
+## Inverse-expit bridge validation
+
+The workflow also runs cmbridge's unit tests and
+[`scripts/validate_linked_bridge.R`](scripts/validate_linked_bridge.R).
+The additional five-seed check uses 300,000 observations and a four-category
+truth represented by each candidate. All three bridge learners fit
+`1 / expit` using unrestricted coefficients. Adjoint fits use identity
+and recover a truth containing negative values. Moment-loss consistency,
+finite predictions, the bridge lower limit, and recovery tolerances are checked.
+The existing continuous bridge, adjoint, and ensemble tests are retained
+with their original specifications and tolerances. Those specifications
+use identity links, so they check compatibility separately from the new links.
+New runs store plots and numerical results in `results/run-<run-id>/`.

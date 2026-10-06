@@ -35,8 +35,20 @@ jobs:
           mkdir -p "results/run-${GITHUB_RUN_ID}"
           git -C _cmbridge_package rev-parse HEAD > "results/run-${GITHUB_RUN_ID}/cmbridge_commit.txt"
 
+      - name: Install validation dependencies
+        shell: Rscript {0}
+        run: |
+          packages <- c("Matrix", "glmnet", "digest", "testthat")
+          missing <- packages[!vapply(packages, requireNamespace, logical(1), quietly = TRUE)]
+          if (length(missing)) install.packages(missing, repos = "https://cloud.r-project.org")
+
       - name: Install cmbridge
-        run: R CMD INSTALL _cmbridge_package
+        run: R CMD INSTALL --install-tests _cmbridge_package
+
+      - name: Run cmbridge unit tests
+        id: unit
+        continue-on-error: true
+        run: Rscript -e 'testthat::test_package("cmbridge", reporter="summary", stop_on_failure=TRUE)'
 
       - name: Record R session
         shell: Rscript {0}
@@ -63,11 +75,22 @@ jobs:
         run: |
           Rscript scripts/validate_ensemble.R "results/run-${GITHUB_RUN_ID}/ensemble"
 
+      - name: Validate inverse-expit bridge and unrestricted adjoint
+        id: linked
+        continue-on-error: true
+        run: Rscript scripts/validate_linked_bridge.R "results/run-${GITHUB_RUN_ID}/linked-bridge"
+
+      - name: Draw individual learner recovery plots
+        if: steps.bridge.outcome == 'success' && steps.adjoint.outcome == 'success'
+        run: Rscript scripts/plot_recovery_truth.R "results/run-${GITHUB_RUN_ID}"
+
       - name: Record outcomes
         if: always()
         run: |
           {
             echo "github_run_id=${GITHUB_RUN_ID}"
+            echo "unit_outcome=${{ steps.unit.outcome }}"
+            echo "linked_outcome=${{ steps.linked.outcome }}"
             echo "bridge_outcome=${{ steps.bridge.outcome }}"
             echo "adjoint_outcome=${{ steps.adjoint.outcome }}"
             echo "ensemble_outcome=${{ steps.ensemble.outcome }}"
@@ -104,7 +127,7 @@ jobs:
           fi
 
       - name: Fail workflow if any validation failed
-        if: steps.bridge.outcome != 'success' || steps.adjoint.outcome != 'success' || steps.ensemble.outcome != 'success'
+        if: steps.unit.outcome != 'success' || steps.linked.outcome != 'success' || steps.bridge.outcome != 'success' || steps.adjoint.outcome != 'success' || steps.ensemble.outcome != 'success'
         run: |
           echo "At least one validation failed."
           echo "Bridge:  ${{ steps.bridge.outcome }}"
