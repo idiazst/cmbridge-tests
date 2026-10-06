@@ -1,0 +1,369 @@
+fold,bridge_specification,fit_key,horizon,fitting_n,candidate,scope,failure_training_n,error,mechanism,n,replicate,seed
+1,1,2a07e45770d35bb565fe1ae82b0999b9,2,18,sieve_md,validation fold 3,12,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,1000,1,5102001
+1,1,365e1fabee03ae946d9531a1e4f58c34,1,19,sieve_md,validation fold 2,13,Nonfinite validation predictions.,binary_longitudinal,1000,1,5102001
+1,1,83924bd5a5974785d4115a9132daf567,2,27,sieve_md,validation fold 3,18,Nonfinite validation predictions.,binary_longitudinal,1000,1,5102001
+1,1,d70cf8240b5f7555953ffddeade8a79e,1,18,sieve_md,validation fold 2,12,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,1000,1,5102001
+2,1,4ec8580deb6108c3aca6aa6d5abf12fb,1,18,sieve_md,validation fold 2,12,Nonfinite validation moment score.,binary_longitudinal,1000,1,5102001
+2,1,9894dec6fb33ee17102e00786568dab1,2,19,sieve_md,validation fold 3,13,Nonfinite validation moment score.,binary_longitudinal,1000,1,5102001
+3,1,02b7c42e3170a1666445593aee5e0dc2,1,28,sieve_md,validation fold 2,19,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,1000,1,5102001
+3,1,089e2fd564ac25f9a844bc502357b6f9,1,19,sieve_md,validation fold 3,13,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,1000,1,5102001
+3,1,5827bc495414331e4ce40305ae4693be,2,19,sieve_md,validation fold 2,13,Nonfinite validation predictions.,binary_longitudinal,1000,1,5102001
+3,1,85afb11e664e97b3ad7d6a5e1d3df1da,1,18,sieve_md,validation fold 1,12,Nonfinite validation moment score.,binary_longitudinal,1000,1,5102001
+3,1,927dc82aa0b8b5ad6f11be0868967b89,1,18,sieve_md,validation fold 1,12,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,1000,1,5102001
+3,1,d23ea5e41dc11a3a1f44ba6181131f0e,1,19,sieve_md,final training refit,19,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,1000,1,5102001
+3,1,f10c35a7cdeb7692d70d4530f4fd483f,1,19,sieve_md,validation fold 2,13,Nonfinite validation predictions.,binary_longitudinal,1000,1,5102001
+1,1,1ca2f792dee79f9fb295aa05ad229253,2,19,sieve_md,validation fold 1,12,Nonfinite validation moment score.,binary_longitudinal,1000,2,5102002
+1,1,44a4001ad3fefb5f11943a961b82ad39,1,18,sieve_md,validation fold 2,12,Nonfinite validation moment score.,binary_longitudinal,1000,2,5102002
+1,1,976dd1942a80989dcffe3c30c6b74d50,1,19,sieve_md,validation fold 3,13,Nonfinite validation predictions.,binary_longitudinal,1000,2,5102002
+1,1,9defaa94a1af45c3e1b8fbd9a5c214bd,1,19,sieve_md,validation fold 1,12,Nonfinite validation predictions.,binary_longitudinal,1000,2,5102002
+2,1,14c4aa4c1d52ae7d087aaf2697e062b9,1,18,sieve_md,validation fold 2,12,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,1000,2,5102002
+2,1,26dd525eaa983723d7842ffab5609dee,1,19,sieve_md,validation fold 1,12,Nonfinite validation predictions.,binary_longitudinal,1000,2,5102002
+2,1,29993055fdec949ae0fdf93b145510ba,2,18,sieve_md,validation fold 2,12,Nonfinite validation moment score.,binary_longitudinal,1000,2,5102002
+2,1,61f1ee9d8c3efaa3310d82174c10bff0,2,19,sieve_md,validation fold 1,12,Nonfinite validation predictions.,binary_longitudinal,1000,2,5102002
+2,1,c7fa9a0d11cb072507e447270f1f1fd6,2,18,sieve_md,validation fold 2,12,Nonfinite validation moment score.,binary_longitudinal,1000,2,5102002
+2,1,e82002baf3de0447c89b0d2b0366f26c,2,18,sieve_md,validation fold 1,12,Nonfinite validation predictions.,binary_longitudinal,1000,2,5102002
+2,1,ea408a27b51a7f4e66d8fd3b6c3a75e7,2,19,sieve_md,validation fold 1,12,Nonfinite validation predictions.,binary_longitudinal,1000,2,5102002
+3,1,8e145983022d4b113370acdaaa547897,2,27,sieve_md,validation fold 3,18,Nonfinite validation predictions.,binary_longitudinal,1000,2,5102002
+3,1,a33116b7d4899e7d9b021dbe23643447,1,28,sieve_md,validation fold 1,18,Nonfinite validation predictions.,binary_longitudinal,1000,2,5102002
+3,1,f7f687b5471d93b6644de9b55ef97943,2,18,sieve_md,validation fold 3,12,Nonfinite validation moment score.,binary_longitudinal,1000,2,5102002
+3,1,80ab5f429c2dce3f9825c5061ee8574a,2,56,sieve_md,validation fold 2,28,Nonfinite validation predictions.,binary_longitudinal,4000,1,5103001
+1,1,104b8c897747b8c6163024920fa3e4bc,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+1,1,169665cdc411e3a96ce74c84e4aa311c,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+1,1,1f946fea096b7ac64fcdad9e8f6277f5,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+1,1,22bf89839061af755e4412f97e55e782,2,13,sieve_md,validation fold 2,9,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+1,1,3cdc020a8dec456b7e07a792f9bafb41,2,13,sieve_md,validation fold 1,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+1,1,3f07958650c4b95445b4e724685fd83b,2,13,sieve_md,validation fold 3,9,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+1,1,55e3da8c266958a9e5b9b5d7eb536dc9,2,12,sieve_md,validation fold 1,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+1,1,6bb678f04b1489911d6e683b58ff35e4,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+1,1,708f06987579ed20ec8ec37b005ed9cb,2,18,sieve_md,validation fold 2,12,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+1,1,796e6e3455f40dd1f55fad310bfe2931,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+1,1,7c641604a36b5239ed7abea7e0b1946d,2,12,sieve_md,validation fold 1,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+1,1,84b9796fac50b9e6119587e59e78fe64,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+1,1,91d109f1196f4fee2bceea612f12d1fa,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+1,1,958ffbc34bf6b9dbf10e9ae1d2a3d607,1,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+1,1,ada2a85adda14ed757e04ebb159e8af3,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+1,1,adcd978db33cef1603b8dbf21fb0a58a,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+1,1,c9e72d548ab573756c11c055032b189f,2,13,sieve_md,validation fold 3,9,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+1,1,d24a28aa19dc3c0b2c64ed4a9c405e3a,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+1,1,d97e16fb58232d2db6184de4050598db,2,13,sieve_md,validation fold 1,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+1,1,ebfc055387a6252899fa6676bffba805,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+2,1,09404d4d0fdf3699ed87c2e6a592bb5f,2,13,sieve_md,validation fold 1,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+2,1,105bf86291227644629611684d087a3a,1,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+2,1,18a4959092631381aabfdd449d38bbda,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+2,1,235ad01b23470722f50684148674128a,2,13,sieve_md,validation fold 2,9,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+2,1,2380fa24491784f2d07eee69bda26296,1,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+2,1,35b4a8027531784d2f934402dbd323ff,1,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+2,1,4f98da5a8d1e19c33acd50324ebec85d,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+2,1,5ded720e15a4226f8bafaa9ed7f2b31a,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+2,1,8cb1f6228c0aa04da50211cc8c85b303,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+2,1,95711ec1764d3c3c32b291ab2edaf28e,2,13,sieve_md,validation fold 3,9,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+2,1,a136c45116e4255348b573dc0c194685,1,13,sieve_md,validation fold 3,9,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,500,1,5101001
+2,1,a146343281a8725b8c620e535b7e5bce,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+2,1,a46340ee3674894c03402c5d821e643f,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+2,1,aa686e21e268b7483f50c00e2e95c78f,2,12,sieve_md,validation fold 1,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+2,1,d408bf08545e916ece620d0d80011340,1,13,sieve_md,validation fold 1,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+2,1,eca522d124bd27ae370c3c82470b1a1b,2,13,sieve_md,validation fold 2,9,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+2,1,f0c5fa09868132e58a8a8109c246df74,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+2,1,f679db6489d41da25848b46f094d3709,1,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+3,1,032d9db6dd7f0ec2cf64fb4eff5cede7,1,13,sieve_md,validation fold 3,9,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+3,1,03b5e2092adcf4d806a55cfb4b06b3cd,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+3,1,1a2b5719f24d0f94f76bfe3cdf4aa823,1,12,sieve_md,final training refit,12,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,500,1,5101001
+3,1,21d8d35521d3b7b80da85942c6f2adf1,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+3,1,313a4dc55d0f546663bd7da6cfd3d6df,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+3,1,3ad2754af0c8f16e8a017d086e3fb6f5,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+3,1,4bd918f2fb1855a408756594ceb4aeb2,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+3,1,557871fb201756a7abe216124ca68a71,1,19,sieve_md,validation fold 1,12,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,500,1,5101001
+3,1,5c73a2c9c7e0abef167e2074e36a6cf4,1,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+3,1,6862febdf440f37d41896bcfae9d4bf8,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+3,1,688560b2925a668786d8a4c38b568403,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+3,1,6e2fcc7c7730b567463fdf987d8adff8,1,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+3,1,72b62bb32bd672c2c9091fb4b2eb06cd,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+3,1,7a9cd7d9e11b694788c5bba77c8104e8,2,12,sieve_md,validation fold 1,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+3,1,84ce03140a85725c86cb06eccb8e89be,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+3,1,89efb889e321346ac10b35e0d244750c,1,12,sieve_md,validation fold 1,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+3,1,8a0f45a831e701a9d209ef2578de1dac,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+3,1,8d65912e5681d8f34a89e08e1e83fa93,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+3,1,a880398c18c301ba663cb645b4bac141,1,13,sieve_md,validation fold 1,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+3,1,b284bb3373dce8f02b93bc7714b0b50d,2,13,sieve_md,validation fold 1,8,Nonfinite validation moment score.,binary_longitudinal,500,1,5101001
+3,1,c17f91a562619882cdea4b493e498f9b,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+3,1,cedd4b1b6c10d61ebd299624867a2a47,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+3,1,d82693351750ea07dc6f6698d03e1c6d,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+3,1,de48060f8b3771f15196c96c8315f11e,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+3,1,e417dc36c68916a59cb09ee0fc28e220,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,1,5101001
+1,1,0092388c88bbea6c4b99691664a3aeb8,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,026acce1802d09f2d19c88c6fd5a5b5f,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,078c4f40c4162b9198b81c07a98e36e3,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,0fead77884bab76643c99afb97bf65c7,2,13,sieve_md,validation fold 1,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,18725b96f4a118228d03ef2214d73bc4,1,12,sieve_md,validation fold 1,8,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+1,1,1e08aa01edcb23786e831369feccc65f,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+1,1,1e196c0e0f8f68ad06418f47eb1efe58,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,2fee105e15536378054e92f2f9c20a42,1,12,sieve_md,final training refit,12,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,500,2,5101002
+1,1,30e93940ed44df881c2f57cc09068310,2,13,sieve_md,validation fold 1,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,338ef6014b969091a9a37c50bc91f04f,2,19,sieve_md,validation fold 3,13,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,37962c3a922e665d8fd27c32a668f716,1,12,sieve_md,validation fold 1,8,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+1,1,3ae14be399fd5a6898993673b665ccec,2,13,sieve_md,validation fold 3,9,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,407eb052f8e6630c0065164279611ff4,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,442a6f54db7562f426d924a788f7fb4d,1,12,sieve_md,validation fold 1,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,44b9730b3bbed856952607dee58b455d,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,56757b373243f9c4aaa5afd0377cfa93,1,19,sieve_md,validation fold 2,13,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,500,2,5101002
+1,1,56e4a8c445f769dc08d7f30cdb17399f,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,573bdb3edf160d2ef317e04f105000eb,1,18,sieve_md,validation fold 2,12,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,500,2,5101002
+1,1,6a70c10322be1b8e1dc64bc943a5b334,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,76b5a085cbdb5c0a319523391da12626,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+1,1,7c076c43c803e041a5a70b55efdfa19e,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,8209f59cca75e40632240a359bab37f1,2,12,sieve_md,validation fold 1,8,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+1,1,8f10a1de91e623db42642fe5dab63352,2,13,sieve_md,validation fold 1,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,962d90d82dbb8209189a3cc029b60dc3,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,a1b82e7a7fa2f4ba69f508da6326d202,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,b3eb9293e207fb683ec4f397e3c2d086,1,18,sieve_md,validation fold 1,12,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,b83a7389c23c21cc8943ccbb731f5050,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,ce17381c9c078ba29d28cb8a3d015211,1,12,sieve_md,final training refit,12,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,500,2,5101002
+1,1,d06664cf93914ee292df8ec273ae0ec6,1,18,sieve_md,validation fold 3,12,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,500,2,5101002
+1,1,d439ed167565510bfaf6a7573c7ea7d5,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,e13e9dac263f9a3bd40dae9d27e60928,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,e382799a5ab1c06d3561ac9028665999,1,13,sieve_md,final training refit,13,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,500,2,5101002
+1,1,f3146225e7d38f3cec857e82f87f8fee,2,13,sieve_md,validation fold 1,8,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+1,1,f9275663d2477d4c910c8e98edf978a1,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+2,1,04d5f469125ae1cef4484508112beb60,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+2,1,14e002fc2ff44b8476c11b8161e7b280,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+2,1,156d66d28e4ae125ba8072a80311fc97,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+2,1,28e100ad33a58ebaf09e02a54c500358,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+2,1,3411104381b1e5c1c61afe7a03941852,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+2,1,3f89dbe0d22fef116b023f5361bc65e0,1,12,sieve_md,validation fold 3,8,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,500,2,5101002
+2,1,422df8e20c036abd0e3102452884f09c,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+2,1,44316dbd3054bfad0c3e6d07f7553163,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+2,1,4f7e38644bd13b7e6bd38eab0677c406,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+2,1,5bb96b1ba07c4ba70e64c7e2b9c734e2,2,18,sieve_md,validation fold 1,12,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+2,1,62a9d0c990eab21a609ea15c0348b622,1,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+2,1,6764d65b6eb5c5865516d315171f366f,1,13,sieve_md,validation fold 1,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+2,1,7167fcbc498b9acb77bf7294ed419f42,2,13,sieve_md,validation fold 1,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+2,1,7f2ab860e9558dbb851068c15ee9689c,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+2,1,8d0ca91477394c2322d3b7069a0051a5,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+2,1,9daac6aee160d83a02a61c0558139568,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+2,1,a0c7be953d1d4d6dacda9ea067b2d9d5,1,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+2,1,a25d3d672ebcb1c0a4b4fc4a539c90c6,2,13,sieve_md,validation fold 3,9,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+2,1,a5c2fbfbf25e44b840e0dee678984dbb,1,13,sieve_md,validation fold 2,9,Linked quadratic sieve did not pass its coefficient-gradient check.,binary_longitudinal,500,2,5101002
+2,1,abd91a8863a79752e0614da6e6c4b738,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+2,1,ace6a5e793da05f6db492c7296fe9f65,2,13,sieve_md,validation fold 3,9,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+2,1,ba1a883bd04ac9f582ed5f74c9e3e75d,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+2,1,c808b812cf532a53a97028eef8e4d32b,1,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+2,1,f8c97adc4333fccbf7eca7984313aee4,2,13,sieve_md,validation fold 3,9,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+2,1,f90881eecea97cfadca7124795a7501a,2,28,sieve_md,validation fold 1,18,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+3,1,0b8970dbac2e937d3c7c778bd7f1cd8f,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,0c3009dcf6068ef64569b99e6994a2f8,2,18,sieve_md,validation fold 1,12,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+3,1,1445837c3a65b19fd6af073569d7b01b,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,2e1225bf5e24c278e202d5c574735c5c,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,3d40ce89295d556a145f04995b070568,1,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,55b04e68afb857ce90560df0f8736a24,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,5a3dc753630a39580feb415f3ac99a9a,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,5de46f9450273ac4780fa003d46565b0,2,13,sieve_md,validation fold 3,9,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,66284b11e7a9317639f765a588fa73a7,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,67f29d9e0458fc609d410c84212eeb2e,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,7ad741bf5190be9e72da0376cac3facc,1,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,89dbdf5d2f25d5d2306f0361849dc0f5,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,972b3cceb8764d275fbf0a835b7e0f11,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+3,1,9d5b1dd0e68e3511ed765a23364215cb,1,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,a1f63cefce5f92f013a0e55be6f53c85,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,a337baf49c0f0d9b59164ed553e70574,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+3,1,b04167700b2c1bf11289c4fb6682f860,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,b5b30f246eac401592bd5458ce7ab0bc,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,c8f1e7c7c9a41911b3d96ff804c4a39d,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,cbcd58d0447856ec3671be909a613e2c,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+3,1,cd11ed630aa0ec9191f387fbd0baa58a,1,13,sieve_md,validation fold 3,9,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,dd7652cb838bade3e90536703b9ec18f,1,28,sieve_md,validation fold 1,18,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,de34fd06f945c74fb81ac2b44d3aed7c,2,19,sieve_md,validation fold 1,12,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+3,1,ec99ae60c0054517b12c0529e8839b52,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+3,1,eeaaea4dfb1ef36b59b3fd7cda89d769,2,13,sieve_md,validation fold 3,9,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+3,1,f57c7839d7cb07034d8c2bd981189b0f,2,13,sieve_md,validation fold 3,9,Nonfinite validation moment score.,binary_longitudinal,500,2,5101002
+3,1,f6223f586a24c31006cfd25b0d25765b,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,binary_longitudinal,500,2,5101002
+1,1,3bfd85f14e1fd265c55a58b9a5f01ab9,1,18,sieve_md,validation fold 2,12,Nonfinite validation predictions.,discrete_dose,1000,1,5202001
+1,1,6c438d71b501226d988c6e08440f0d46,2,19,sieve_md,validation fold 2,13,Nonfinite validation moment score.,discrete_dose,1000,1,5202001
+1,1,dc73cec8edc67376760bf728a3c9ca01,1,18,sieve_md,validation fold 1,12,Nonfinite validation predictions.,discrete_dose,1000,1,5202001
+1,1,ef109f377ce7533e226c4cbca77b5cf7,1,27,sieve_md,validation fold 2,18,Nonfinite validation predictions.,discrete_dose,1000,1,5202001
+2,1,25e285d6363d086ca8be7a96defdb24f,2,19,sieve_md,validation fold 1,12,Nonfinite validation moment score.,discrete_dose,1000,1,5202001
+2,1,73c1269480eca6d8cf55755fdcfccefc,2,18,sieve_md,validation fold 1,12,Nonfinite validation predictions.,discrete_dose,1000,1,5202001
+2,1,d4e95cb1f736ac0500640879bddad925,1,18,sieve_md,validation fold 3,12,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,1000,1,5202001
+1,1,0993f25ee4c2d0ed8f24bce0e3ff93ae,1,19,sieve_md,validation fold 3,13,Nonfinite validation predictions.,discrete_dose,1000,2,5202002
+1,1,0afe183134e6a11e2b190a397a468bf7,1,18,sieve_md,validation fold 2,12,Nonfinite validation predictions.,discrete_dose,1000,2,5202002
+1,1,5d33bfa1c26607e39b6046a02563b6a0,1,18,sieve_md,validation fold 2,12,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,1000,2,5202002
+1,1,7d3868beef08138b0de71e9b72c5d271,2,28,sieve_md,validation fold 3,19,Nonfinite validation predictions.,discrete_dose,1000,2,5202002
+1,1,8a4a79da120ac1d25515e0e54bd9dbf3,2,18,sieve_md,validation fold 2,12,Nonfinite validation moment score.,discrete_dose,1000,2,5202002
+1,1,e5e681d46035fb2b0c0b128e570a3252,2,27,sieve_md,validation fold 2,18,Nonfinite validation predictions.,discrete_dose,1000,2,5202002
+2,1,00121d8dd7dee2c3ccf73cfc8577053d,1,18,sieve_md,validation fold 3,12,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,1000,2,5202002
+2,1,092c13a278be6608cda71150a53e24fb,1,19,sieve_md,validation fold 1,12,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,1000,2,5202002
+2,1,179d5a2d812caf602046e9f79f8bc1bd,2,19,sieve_md,validation fold 3,13,Nonfinite validation predictions.,discrete_dose,1000,2,5202002
+2,1,b71e7c3ec8374139242e1f136545a15d,1,18,sieve_md,validation fold 2,12,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,1000,2,5202002
+3,1,b5c163b3158f638e41420594edf3d2a6,1,19,sieve_md,validation fold 3,13,Nonfinite validation moment score.,discrete_dose,1000,2,5202002
+3,1,4dc107f6c2976ab1c17924277a57b7af,2,56,sieve_md,validation fold 2,28,Nonfinite validation predictions.,discrete_dose,4000,1,5203001
+3,1,e651264bdcc7aa99fd7c3b7eac59d0f6,1,56,sieve_md,validation fold 2,28,Nonfinite validation predictions.,discrete_dose,4000,1,5203001
+1,1,01c9bca44db1ec5b1c8c7ce5e44f8b8a,1,12,sieve_md,final training refit,12,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,1,5201001
+1,1,02a58f356314e2834e4a943bf5fe0e34,2,13,sieve_md,validation fold 1,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+1,1,058bea28354707a3428d2727518538f5,1,18,sieve_md,validation fold 2,12,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,1,5201001
+1,1,16d8182bf2611adfe975d85ffe5e3611,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+1,1,1b2dd9bd7f53f5406678d3d91267ea44,2,13,sieve_md,validation fold 3,9,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+1,1,2fa1352cc3bdc4c8a395df68d3d91790,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+1,1,314cede7d19c8c14bd44bc56afd7398d,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+1,1,31a508a8e0fc2f2936beab61198b06a1,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+1,1,342a6d1c19295924c7015e576cfd4e3d,1,18,sieve_md,validation fold 3,12,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+1,1,587427f29b6c19646cd4b5348fdd5e82,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+1,1,5a4057658834c6fb2f8f7c8e6a6b5ecf,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+1,1,61e9764a072e5a8d55eb48642bf58eca,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+1,1,629a7abafe02c090f96e16580c2173b3,2,13,sieve_md,validation fold 3,9,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+1,1,62b49b3dad992558e23e8adaca5d77e5,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+1,1,64ad62dcbc75f090b801a023aabbf3d8,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+1,1,65f69e54c17ef54a1da6827f49d71976,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+1,1,6d68a496a08e3e04d8159088461b8856,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+1,1,7825f195ef01103dd2115139e6757ae2,1,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+1,1,803ee638ef43b045c1c0957d54a9f00d,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+1,1,a19cc724ca1ba7ec2521903ce4ccd356,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+1,1,a57fe7f259d1064d72624ada48ba58f0,2,13,sieve_md,validation fold 1,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+1,1,a676fcc94d6f67aaf9f1de707850c3ef,1,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+1,1,a91b9bb3e1420a575f90bc8887d94d46,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+1,1,aaccf5b5a70256b487fe425b1d7f910b,2,13,sieve_md,validation fold 3,9,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+1,1,acd3dbd738e7b508ebd73f9d1d2c054d,2,18,sieve_md,validation fold 1,12,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+1,1,b12b8bc4dc056bf08aba3eaaeb694fbf,1,13,sieve_md,validation fold 2,9,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,1,5201001
+1,1,c95a7a9c00712155bd57a0a0b4bbfdc4,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+1,1,d1844e8765d63d5825fed4a5b8d532fc,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+1,1,d2c8a3547f69c7a66172416a9352bdca,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+1,1,d3d177aaec5e2abea6bb1589d33e6fc8,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+1,1,d4eb9b5053c4afb777628f6feadb10ee,1,13,sieve_md,validation fold 2,9,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,1,5201001
+1,1,d5401290c8b2823c9ff966b90394a6f8,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+1,1,fd0123ddbc4d4b470f9dd74f0eb4ffa1,2,13,sieve_md,validation fold 2,9,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,1,5201001
+2,1,07a7f10abb16e5eb905f50bb8a8c83f8,1,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,1160825c86a57deb25280722983a84c9,2,18,sieve_md,validation fold 3,12,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+2,1,18d92fdde60ac3c2637dcf595d585c31,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,3ff9b4863f9ebfcbe7c63041ab4f34b5,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,4045c08492c8c7bd5e23cb195bf99335,1,12,sieve_md,validation fold 3,8,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,1,5201001
+2,1,439a3ed35c33f95a323390568554bc8b,1,13,sieve_md,validation fold 3,9,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,47bcbb98ef02654e34f896b8b478e574,1,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+2,1,4881958eaa382ff979e55aab70defb2e,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,4b571efcd9e6da263d821a750efb2c47,1,27,sieve_md,validation fold 1,18,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+2,1,4d4f491b1466db9bfa8e5d5de01b434c,2,18,sieve_md,validation fold 3,12,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,4e92367ff52a86af3ae835a974bbaa50,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+2,1,4feccabb2afe2f906275369a57c59081,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,52e6186d99e291afd835b93fcae62624,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,534e6e9a016a7212e8964aa6e58f3a83,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,596f181edc5f7ba91b16e3c171af684d,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+2,1,6640ab302a50de5f04f33b7df65e790c,2,13,sieve_md,validation fold 1,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+2,1,67e00bcf5cf6e40070d93807e47425f2,2,13,sieve_md,validation fold 1,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,6a7c7575bac57865e336e4cbaeedc62d,1,13,sieve_md,validation fold 2,9,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,1,5201001
+2,1,6b67a377cf8e2fa0e6da47fe191ae269,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+2,1,6c0814f5486f0a57e3faf4bcad4da437,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+2,1,70dd042389749dfeb591947accc55ff4,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+2,1,79ee1b93d5811f5cd370492fb33442fc,1,12,sieve_md,final training refit,12,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,1,5201001
+2,1,7fb507ff6a46b0de14e4029a447b8215,1,18,sieve_md,validation fold 1,12,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,85d4c628cc277cd5e0ade03fc0bfbc27,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,8e9849fca25bd614f7c00be0338729e8,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,a318fef99263b76f1aaa183b653c8f11,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+2,1,a37a345c345de5686a33c48c98c47f00,2,12,sieve_md,validation fold 1,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,b501c08887ae99dd2af09289eb906f39,2,13,sieve_md,validation fold 1,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,cf69b74d3fb38612f9a6f3d09556756f,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,d1e7ae801b36a9c27b41ffe4ef35852b,1,12,sieve_md,validation fold 1,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,e2d17fc21db6d61de44a23354577091c,1,18,sieve_md,validation fold 3,12,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,f3665b388018a5b07e5db1887e853a1d,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+2,1,fcf92f9ffeb3eb99ae42eceecf348134,2,12,sieve_md,validation fold 1,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+3,1,03aac32b4ded3efc2020eea6b885dfc8,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+3,1,19a22f31ad45a78e13d8edacd0b247f0,1,13,sieve_md,final training refit,13,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,1,5201001
+3,1,1ad139389d2223da7baf89cddcb1d718,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+3,1,2b3b2d3cc0baf9e5de2150e6b5d370dc,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+3,1,4a7b75f86fd9873b8fab872e89640078,1,19,sieve_md,validation fold 3,13,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,1,5201001
+3,1,5200ec3ad138a0d441f7e6c37b5dffd0,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+3,1,5406d48a9fa098c566f19a710b4ec586,1,19,sieve_md,validation fold 2,13,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+3,1,6449189babb83d519035304d6f2657ca,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+3,1,71aa6e9d5e4dcd4aed6bbcd60b078888,2,13,sieve_md,validation fold 3,9,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+3,1,72f5418d3f34936636ba3584c4d807ba,1,18,sieve_md,validation fold 2,12,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+3,1,7af728b66b51bfcda2d52da49a0083fa,2,18,sieve_md,validation fold 3,12,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+3,1,8569431263bda86048c3c7ad6785bdca,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+3,1,97d21b2d9c5a4c0320d52a04fcbf51a9,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+3,1,982d4f5b8e2f5c083beeaa5a5bfbca86,2,13,sieve_md,validation fold 3,9,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+3,1,9ab9185585e3d731b16a54a105f3649b,2,12,sieve_md,validation fold 1,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+3,1,a6eec71b878717034c267665707f2bad,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+3,1,a9b5dd5cc2b64495359f34259b1169da,1,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+3,1,b4276dfd73e8e3fbb0a7134690ca2c3b,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+3,1,c019b5f61110937d92a3cedb1c46e300,2,28,sieve_md,validation fold 3,19,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+3,1,c586e5a9aa2d6f1baa6a1b36b044897a,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+3,1,d3ec6b67ebd79ca2953a930272267b13,2,12,sieve_md,validation fold 1,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+3,1,e0c5765f679f49ca09a5e4132aa9b9fb,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+3,1,e1d4668027874dc187086fa9011cdb89,1,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+3,1,e7e79bdb143e650c943b1c1ded72488f,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,1,5201001
+3,1,f9206f7b41badb3c7ae5b9ceaf637b84,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,discrete_dose,500,1,5201001
+1,1,12dc814dd65128f7cd225499bd82c8d2,2,13,sieve_md,validation fold 1,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+1,1,1900d07fb74887df6c697f374f302f78,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+1,1,1ed16d06c8f5249e16cbe49eff914e02,2,13,sieve_md,validation fold 1,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+1,1,2883663af11a0924b24a5e8890250986,1,19,sieve_md,validation fold 1,12,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,2,5201002
+1,1,289a32ef863ef6c426533d045c6197eb,1,12,sieve_md,final training refit,12,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,2,5201002
+1,1,2bbffe8c67dee5a435322847734e652b,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+1,1,3642ef1d1d08cb4e01b3bf8a31b8e97c,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+1,1,3defe6e5950a9bc4ff7d874b4c0593f5,2,18,sieve_md,validation fold 2,12,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+1,1,5fc86611673a51e700fe77660817fa5a,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+1,1,725b85a94bf5f7a42561024f5fb68047,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+1,1,936a8d0ce4158dbdd347daf3bda5f967,1,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+1,1,be33f2666433b0a8e16deba6767cf182,1,19,sieve_md,validation fold 1,12,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,2,5201002
+1,1,c00a560238976576994df50818c1f735,1,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+1,1,c1def2ef293faf56a740ff9a42cbb0f2,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+1,1,d4df56e5cc691831a5b6acd4c3cbae11,2,13,sieve_md,validation fold 2,9,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,2,5201002
+1,1,d8e28989f58b108454504981101f2e99,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+1,1,df7e921cc0ca948e1c41c17e574ab8cf,1,12,sieve_md,final training refit,12,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,2,5201002
+1,1,e5c2d981175f84a2f61a1d34482dbc80,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+1,1,eceb70a95552f60d996499ebb4a935ae,2,19,sieve_md,validation fold 3,13,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+1,1,ff5216827e00889d097908cb87326ad2,1,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+2,1,0744b21050a1e76fbe436d2e7aa27fec,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+2,1,0fa0cfdbd68a1edf6399086c04471a05,1,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+2,1,14f821dbf3433f41fa7279562c34dc7f,1,12,sieve_md,final training refit,12,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,2,5201002
+2,1,1bce7ac5e44bd6b89deaa485483653eb,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+2,1,28bcb8fd35260344cda19dd42ebe84fd,2,13,sieve_md,validation fold 2,9,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+2,1,29568ed02d30ea1b81507d7dfdc29806,1,19,sieve_md,validation fold 3,13,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+2,1,2aa41136cf6637e9c04f33e2c40f97a5,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+2,1,2fdc183266774cc16b15987993c6a0f0,1,12,sieve_md,validation fold 1,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+2,1,31f0b77eb0cf4ae58103ee4143f44875,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+2,1,407fb3382081bdae208b56580dfc0c76,1,18,sieve_md,validation fold 1,12,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,2,5201002
+2,1,41022f5e5f05eed5fa33d01c4c312485,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+2,1,470caad896b2eb412e87781e1fe14fb1,2,28,sieve_md,validation fold 1,18,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+2,1,529aca7d4d849b343ee275ffeaf7a451,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+2,1,59a3d7da5fb7a0ca93b6f11c3f12a5a5,1,12,sieve_md,validation fold 1,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+2,1,5be915daf99cc2515d93e907a6e1acd9,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+2,1,65c5755f6a3c847b5e17674e9fe5a010,1,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+2,1,6de9ace58da9a8fd5771a5288a07e26a,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+2,1,7ca0d2ea1bf134d2d480b1bcbd0b643a,1,13,sieve_md,validation fold 1,8,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,2,5201002
+2,1,80181ed13176676a739e56da87bae101,2,13,sieve_md,validation fold 3,9,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+2,1,8e7588cfbd135c41904b8923efeb441d,2,13,sieve_md,validation fold 2,9,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+2,1,a5dfecdd74237db7086f8f877ac4c86a,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+2,1,a82a3e7c17b6761bb170c35c8025a308,1,27,sieve_md,validation fold 3,18,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+2,1,a9b832f1fdcfa74af358064e066f5b36,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+2,1,b51f2ee7714df4f030a7ba847892fcf7,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+2,1,b561a35199b9387c101c6e19767b933c,2,12,sieve_md,validation fold 1,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+2,1,c142bfe9f2578265e64a44cba3e3c6a7,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+2,1,d0934bf045933c978f25791e0e4617db,2,13,sieve_md,validation fold 3,9,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+2,1,d3f9643744e19f61ed11c9dbe6553ffc,1,19,sieve_md,validation fold 2,13,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+2,1,e3c34e492559c7fb5835e66ba788afff,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+2,1,e57a3f1c7ca97b71717ce7d76021cdfd,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+2,1,fe2273969b25d116fddd582b5ba2381a,1,12,sieve_md,validation fold 2,8,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,2,5201002
+3,1,1caf94a7018d82c4aa0a8272b5e59657,2,12,sieve_md,validation fold 1,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,2c1b7414d3eea47ee2af41b2ca08112b,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,2f318b86734ac00aaadac423c8420472,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,3bb18ec0a3702e2f6ef2fb2147c1a9c6,2,13,sieve_md,validation fold 2,9,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,47c104712b8dda5af756eb732086d8e0,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,4b700f3844b6c899079a99c9ab999114,2,13,sieve_md,validation fold 3,9,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,554ab37a2be15d5a34f79ec5e4e07c0b,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,6e1313581f858777067871a7b4389898,2,28,sieve_md,validation fold 1,18,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+3,1,7784493b0c9df709cc304038d5eace9f,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,781a259f9a8d8a8be21f081950d0a82a,1,12,sieve_md,validation fold 1,8,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,2,5201002
+3,1,7c5a5eabb41bcaa778a803593741578b,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,7d955171fd6640b207fe1308cc4e721e,1,13,sieve_md,validation fold 3,9,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,8333cdcf5376b498dcec1921cb6ca242,2,13,sieve_md,validation fold 2,9,Linked quadratic sieve did not pass its coefficient-gradient check.,discrete_dose,500,2,5201002
+3,1,884bb5fa06fa6f4a1cb8706688e59974,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+3,1,8f6011477a050aa44c5bb138c1334d27,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,91ca3e939530cae0eb47ff717bbe4eae,2,12,sieve_md,validation fold 3,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+3,1,9d0296dff7ec8e15dd8aeed582d0ac6c,1,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,b0ad102b28134cf4d480645af3842d77,2,12,sieve_md,validation fold 3,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,b67d9dd68ed10b88c2ec531a53f7a24f,2,28,sieve_md,validation fold 2,19,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+3,1,bd17ce2c281d2141d15c0bb112d7a7a3,2,18,sieve_md,validation fold 3,12,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+3,1,c034917a56f962b90488b9045e62258f,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+3,1,cc5c1d75a7ea83e5253e6501a0bf99a7,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,cf766774826f91917e57b6557d8625db,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,d416311909a4ebd025b25a0060b9bdcc,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,d5155cfc7fa3223cb667ccbee97a3e72,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002
+3,1,e1212e8b13638e6444b37ebe3f4c639c,2,13,sieve_md,validation fold 1,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,f67544d047ee80775c34847cff93dfc7,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,f7bcdc318c8da6d914ef0f416507b4f5,2,12,sieve_md,validation fold 2,8,Nonfinite validation predictions.,discrete_dose,500,2,5201002
+3,1,f9520bfecd5af0a4b8f5cd2fb436f2ea,2,12,sieve_md,validation fold 2,8,Nonfinite validation moment score.,discrete_dose,500,2,5201002

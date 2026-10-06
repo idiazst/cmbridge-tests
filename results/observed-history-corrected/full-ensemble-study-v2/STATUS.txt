@@ -1,4 +1,4 @@
-Running the revised study with missingness at both follow-ups.
-Completed datasets: 0 of 1200
-Remaining datasets: 1200
-Workers: 10
+Local timing attempt deliberately handed off to GitHub run 37417223244 at 2026-10-06T05:17:41.128517+00:00.
+Completed local datasets: 10 of 1200; zero final estimator failures.
+Unfinished local fits were interrupted, not counted as completed or statistical failures.
+Linux results use a separate directory and fingerprint; duplicate seeds are not combined.

@@ -1,0 +1,83 @@
+name: Report frozen ensemble study checkpoints
+
+on:
+  workflow_dispatch:
+    inputs:
+      study_run:
+        description: Run ID of the frozen simulation
+        required: true
+        default: '37417223244'
+      early_checkpoints:
+        description: Report only the early batches as preliminary
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  actions: read
+
+env:
+  OMP_NUM_THREADS: '1'
+  OPENBLAS_NUM_THREADS: '1'
+  VECLIB_MAXIMUM_THREADS: '1'
+  FROZEN_ROOT: ${{ github.workspace }}/results/observed-history-corrected/full-ensemble-study-v2
+  STUDY_SOURCE: ${{ github.workspace }}/results/observed-history-corrected/full-ensemble-study-v2/source/simulations/observed_history_corrected
+  SIM_OUTPUT: ${{ github.workspace }}/cloud-aggregate
+  CLOUD_INCOMING: ${{ github.workspace }}/cloud-incoming
+
+jobs:
+  report:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.5.2'
+          use-public-rspm: true
+      - uses: actions/download-artifact@v4
+        with:
+          name: cloud-preparation-${{ inputs.study_run }}
+          path: cloud-preparation
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: ${{ inputs.study_run }}
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: ${{ inputs.early_checkpoints && 'cloud-early' || 'cloud-shard' }}-${{ inputs.study_run }}-*
+          path: cloud-incoming
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: ${{ inputs.study_run }}
+      - name: Verify and extract frozen sources and shared Linux library
+        run: |
+          cd "$FROZEN_ROOT"
+          sha256sum -c PACKAGE-SHA256SUMS
+          tar -xzf packages/frozen-source.tar.gz
+          sha256sum -c SOURCE-SHA256SUMS
+          cd "$GITHUB_WORKSPACE/cloud-preparation"
+          sha256sum -c cloud-library.sha256
+          tar -xzf cloud-library.tar.gz -C "$GITHUB_WORKSPACE"
+          echo "R_LIBS_USER=$GITHUB_WORKSPACE/cloud-library" >> "$GITHUB_ENV"
+      - name: Aggregate without mixing fingerprints or duplicate seeds
+        run: |
+          Rscript simulations/observed_history_corrected/aggregate_cloud_study.R
+          mkdir -p "$SIM_OUTPUT/source/reports"
+          cp "$FROZEN_ROOT/source/reports/simulation-plan.md" "$SIM_OUTPUT/source/reports/"
+          cp "$FROZEN_ROOT/PACKAGE-SHA256SUMS" "$FROZEN_ROOT/SOURCE-SHA256SUMS" "$SIM_OUTPUT/"
+          cp "$GITHUB_WORKSPACE/cloud-preparation/cloud-prepare/dependency-versions.csv" "$SIM_OUTPUT/"
+          echo '${{ inputs.study_run }}' > "$SIM_OUTPUT/parent-study-run.txt"
+          echo '${{ github.sha }}' > "$SIM_OUTPUT/aggregation-commit.txt"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cloud-report-${{ github.run_id }}
+          path: |
+            cloud-aggregate/**
+            !cloud-aggregate/jobs/**
+          retention-days: 1
+          if-no-files-found: error
+      - name: Require all planned checkpoints for a final report
+        if: inputs.early_checkpoints == false
+        shell: Rscript {0}
+        run: |
+          x<-data.table::fread(file.path(Sys.getenv('SIM_OUTPUT'),'job_log.csv'))
+          stopifnot(nrow(x)==1200L,all(x[,.N,by=.(mechanism,n)]$N==200L))

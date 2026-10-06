@@ -1,0 +1,13 @@
+mechanism,horizon,candidate,current_R,reachable_combinations,basis,maximum_representation_error,basis_built_from_one_combination
+binary_longitudinal,1,sieve_md,1,8,cell_linear,3.5527136788005e-15,TRUE
+binary_longitudinal,1,landweber,1,8,poly,1.28785870856518e-14,TRUE
+binary_longitudinal,2,sieve_md,0,16,cell_linear,1.15463194561016e-14,TRUE
+binary_longitudinal,2,sieve_md,1,128,cell_linear,3.10862446895044e-15,TRUE
+binary_longitudinal,2,landweber,0,16,poly,2.66453525910038e-15,TRUE
+binary_longitudinal,2,landweber,1,128,poly,1.77635683940025e-15,TRUE
+discrete_dose,1,sieve_md,1,8,cell_linear,4.44089209850063e-15,TRUE
+discrete_dose,1,landweber,1,8,poly,1.06581410364015e-14,TRUE
+discrete_dose,2,sieve_md,0,32,cell_linear,9.05941988094128e-14,TRUE
+discrete_dose,2,sieve_md,1,256,cell_linear,4.44089209850063e-15,TRUE
+discrete_dose,2,landweber,0,32,poly,4.88498130835069e-15,TRUE
+discrete_dose,2,landweber,1,256,poly,7.105427357601e-15,TRUE
