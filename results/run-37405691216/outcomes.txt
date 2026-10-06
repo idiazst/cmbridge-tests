@@ -1,0 +1,6 @@
+github_run_id=37405691216
+unit_outcome=failure
+linked_outcome=success
+bridge_outcome=success
+adjoint_outcome=success
+ensemble_outcome=success
