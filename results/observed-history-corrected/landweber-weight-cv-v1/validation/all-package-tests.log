@@ -1,0 +1,97 @@
+✔ | F W  S  OK | Context
+
+⠏ |          0 | adjoint
+✔ |          1 | adjoint
+
+⠏ |          0 | bridge
+⠧ |          8 | bridge
+⠏ |         30 | bridge
+✔ |         49 | bridge
+
+⠏ |          0 | ensemble
+⠙ |         12 | ensemble
+⠇ |         19 | ensemble
+⠏ |         20 | ensemble
+⠸ |         44 | ensemble
+✔ |         48 | ensemble
+
+⠏ |          0 | landweber-cv
+⠋ |          1 | landweber-cv
+⠴ |         26 | landweber-cv
+⠙ |         42 | landweber-cv
+✔ |         45 | landweber-cv
+
+⠏ |          0 | linked-learners
+⠇ |   4     35 | linked-learners
+✔ |   4     47 | linked-learners
+────────────────────────────────────────────────────────────────────────────────
+Warning ('test-linked-learners.R:58:5'): adjoints retain their unrestricted default parameterizations
+shoving 'interior' knots matching boundary knots to inside
+Backtrace:
+    ▆
+ 1. └─cmbridge::fit_adjoint(x, x, rep(1, 100), rep(-1, 100), method) at test-linked-learners.R:58:5
+ 2.   └─cmbridge::fit_cm(...) at cmbridge/R/fit.R:108:3
+ 3.     └─cmbridge:::.fit_sieve_md(y, d, x, z, control) at cmbridge/R/fit.R:40:3
+ 4.       └─cmbridge:::.fit_basis_spec(...) at cmbridge/R/sieve_md.R:25:3
+ 5.         └─splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) at cmbridge/R/basis.R:40:5
+
+Warning ('test-linked-learners.R:58:5'): adjoints retain their unrestricted default parameterizations
+shoving 'interior' knots matching boundary knots to inside
+Backtrace:
+    ▆
+ 1. └─cmbridge::fit_adjoint(x, x, rep(1, 100), rep(-1, 100), method) at test-linked-learners.R:58:5
+ 2.   └─cmbridge::fit_cm(...) at cmbridge/R/fit.R:108:3
+ 3.     └─cmbridge:::.fit_sieve_md(y, d, x, z, control) at cmbridge/R/fit.R:40:3
+ 4.       └─cmbridge:::.fit_basis_spec(...) at cmbridge/R/sieve_md.R:27:3
+ 5.         └─splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) at cmbridge/R/basis.R:40:5
+
+Warning ('test-linked-learners.R:58:5'): adjoints retain their unrestricted default parameterizations
+shoving 'interior' knots matching boundary knots to inside
+Backtrace:
+    ▆
+ 1. └─cmbridge::fit_adjoint(x, x, rep(1, 100), rep(-1, 100), method) at test-linked-learners.R:58:5
+ 2.   └─cmbridge::fit_cm(...) at cmbridge/R/fit.R:108:3
+ 3.     └─cmbridge:::.fit_landweber(y, d, x, z, control) at cmbridge/R/fit.R:40:3
+ 4.       └─cmbridge:::.fit_basis_spec(...) at cmbridge/R/landweber.R:21:3
+ 5.         └─splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) at cmbridge/R/basis.R:40:5
+
+Warning ('test-linked-learners.R:58:5'): adjoints retain their unrestricted default parameterizations
+shoving 'interior' knots matching boundary knots to inside
+Backtrace:
+    ▆
+ 1. └─cmbridge::fit_adjoint(x, x, rep(1, 100), rep(-1, 100), method) at test-linked-learners.R:58:5
+ 2.   └─cmbridge::fit_cm(...) at cmbridge/R/fit.R:108:3
+ 3.     └─cmbridge:::.fit_landweber(y, d, x, z, control) at cmbridge/R/fit.R:40:3
+ 4.       └─cmbridge:::.fit_basis_spec(...) at cmbridge/R/landweber.R:24:3
+ 5.         └─splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) at cmbridge/R/basis.R:40:5
+────────────────────────────────────────────────────────────────────────────────
+
+⠏ |          0 | positive-sieve
+⠋ |         21 | positive-sieve
+✔ |         43 | positive-sieve
+
+⠏ |          0 | quadratic-basis
+✔ |          4 | quadratic-basis
+
+⠏ |          0 | saturated-l1
+⠇ |         19 | saturated-l1
+✔ |         23 | saturated-l1
+
+⠏ |          0 | selection
+⠸ |         34 | selection
+✔ |         37 | selection
+
+⠏ |          0 | sieve-cv
+⠋ |          1 | sieve-cv
+⠹ |         13 | sieve-cv
+⠋ |         21 | sieve-cv
+⠦ |         27 | sieve-cv
+✔ |         40 | sieve-cv [1.0s]
+
+⠏ |          0 | stable-moment-bases
+✔ |          9 | stable-moment-bases
+
+══ Results ═════════════════════════════════════════════════════════════════════
+Duration: 3.5 s
+
+[ FAIL 0 | WARN 4 | SKIP 0 | PASS 346 ]

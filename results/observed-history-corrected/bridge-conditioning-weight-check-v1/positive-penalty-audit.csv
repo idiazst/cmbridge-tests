@@ -1,0 +1,33 @@
+mechanism,configuration,training_sample,candidate,parameter,selected,loss,failed_trials,interior
+binary_longitudinal,Original weights,Final,sieve_md,lambda,1.77827941003892e-05,-0.00871809869894518,0,TRUE
+binary_longitudinal,Original weights,Learner 1,sieve_md,lambda,1.77827941003892e-05,0.00979767390027322,0,TRUE
+binary_longitudinal,Original weights,Learner 2,sieve_md,lambda,1.77827941003892e-05,-0.00904968800175354,0,TRUE
+binary_longitudinal,Original weights,Learner 3,sieve_md,lambda,0.0562341325190349,0.00810986707926249,0,TRUE
+binary_longitudinal,Landweber weight CV,Final,sieve_md,lambda,1.77827941003892e-05,-0.00871809869894518,0,TRUE
+binary_longitudinal,Landweber weight CV,Final,landweber,weight_ridge,562.341325190349,-0.0111730355963887,0,TRUE
+binary_longitudinal,Landweber weight CV,Learner 1,sieve_md,lambda,1.77827941003892e-05,0.00979767390027322,0,TRUE
+binary_longitudinal,Landweber weight CV,Learner 1,landweber,weight_ridge,562341.325190349,-0.00741911340019063,0,TRUE
+binary_longitudinal,Landweber weight CV,Learner 2,sieve_md,lambda,1.77827941003892e-05,-0.00904968800175354,0,TRUE
+binary_longitudinal,Landweber weight CV,Learner 2,landweber,weight_ridge,0.0316227766016838,-0.0149232501778333,0,TRUE
+binary_longitudinal,Landweber weight CV,Learner 3,sieve_md,lambda,0.0562341325190349,0.00810986707926249,0,TRUE
+binary_longitudinal,Landweber weight CV,Learner 3,landweber,weight_ridge,3162277.66016838,-0.0109258673371102,0,TRUE
+discrete_dose,Original weights,Final,sieve_md,lambda,5.62341325190349e-06,0.0372130277164197,0,TRUE
+discrete_dose,Original weights,Learner 1,sieve_md,lambda,0.177827941003892,0.0576887052190061,0,TRUE
+discrete_dose,Original weights,Learner 2,sieve_md,lambda,0.177827941003892,0.0652210283863057,0,TRUE
+discrete_dose,Original weights,Learner 3,sieve_md,lambda,0.1,0.0582802038474414,0,TRUE
+discrete_dose,Landweber weight CV,Final,sieve_md,lambda,5.62341325190349e-06,0.0372130277164197,0,TRUE
+discrete_dose,Landweber weight CV,Final,landweber,weight_ridge,0.0316227766016838,0.00585026420807002,0,TRUE
+discrete_dose,Landweber weight CV,Learner 1,sieve_md,lambda,0.177827941003892,0.0576887052190061,0,TRUE
+discrete_dose,Landweber weight CV,Learner 1,landweber,weight_ridge,3.16227766016838,-0.00937320474593802,0,TRUE
+discrete_dose,Landweber weight CV,Learner 2,sieve_md,lambda,0.177827941003892,0.0652210283863057,0,TRUE
+discrete_dose,Landweber weight CV,Learner 2,landweber,weight_ridge,0.0316227766016838,0.0221406991677312,0,TRUE
+discrete_dose,Landweber weight CV,Learner 3,sieve_md,lambda,0.1,0.0582802038474414,0,TRUE
+discrete_dose,Landweber weight CV,Learner 3,landweber,weight_ridge,0.0316227766016838,0.0196743637823153,0,TRUE
+discrete_dose,Fixed 0.01,Final,sieve_md,lambda,0.001,0.00812840208973773,0,TRUE
+discrete_dose,Fixed 0.01,Learner 1,sieve_md,lambda,0.000316227766016838,0.00301600216296754,0,TRUE
+discrete_dose,Fixed 0.01,Learner 2,sieve_md,lambda,0.0316227766016838,0.0241449271879084,0,TRUE
+discrete_dose,Fixed 0.01,Learner 3,sieve_md,lambda,0.00316227766016838,0.021988947692787,0,TRUE
+discrete_dose,Fixed 0.1,Final,sieve_md,lambda,0.000177827941003892,0.00803630973273713,0,TRUE
+discrete_dose,Fixed 0.1,Learner 1,sieve_md,lambda,1e-04,-0.00648606578399894,0,TRUE
+discrete_dose,Fixed 0.1,Learner 2,sieve_md,lambda,0.01,0.0218176491553486,0,TRUE
+discrete_dose,Fixed 0.1,Learner 3,sieve_md,lambda,0.001,0.0217466896658574,0,TRUE

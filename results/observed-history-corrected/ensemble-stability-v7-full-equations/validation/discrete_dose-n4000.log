@@ -1,0 +1,733 @@
+2026-10-06 04:04:35 Fitting nuisance functions for outer split 1
+Loading required package: nnls
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+2026-10-06 04:05:57 Saved nuisance diagnostics for outer split 1
+2026-10-06 04:05:57 Fitting nuisance functions for outer split 2
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+2026-10-06 04:07:21 Saved nuisance diagnostics for outer split 2
+2026-10-06 04:07:21 Fitting nuisance functions for outer split 3
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  all interior knots match left boundary knot
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+Warning in splines::bs(x[, j], df = df, degree = degree, intercept = FALSE) :
+  shoving 'interior' knots matching boundary knots to inside
+2026-10-06 04:08:41 Saved nuisance diagnostics for outer split 3
+2026-10-06 04:08:41 Fitting sequential estimator sdr
+2026-10-06 04:19:17 Fitting sequential estimator tmle
+Warning in fwrite(result$errors, file.path(out, "estimator-errors.csv")) :
+  Input has no columns; creating an empty file at 'results/observed-history-corrected/ensemble-stability-v7-full-equations/discrete_dose-n4000-seed5203006/estimator-errors.csv' and exiting.
+Warning in fwrite(result$candidate_failures, file.path(out, "nested-candidate-failures.csv")) :
+  Input has no columns; creating an empty file at 'results/observed-history-corrected/ensemble-stability-v7-full-equations/discrete_dose-n4000-seed5203006/nested-candidate-failures.csv' and exiting.

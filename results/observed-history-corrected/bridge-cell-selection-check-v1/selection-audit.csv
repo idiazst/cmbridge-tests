@@ -1,0 +1,5 @@
+configuration,raw_gram_reproduction_max_difference,candidate_failure_records,selected_penalties_checked,removed_negative_eigenvalues,projection_adjustment_norm
+Gaussian; Additive,1.30104260698261e-18,0,4,1,0.00194525430640056
+Gaussian; Joint categories,1.17093834628434e-17,0,4,1,0.00194495543195123
+Cell; Additive,5.03069808033274e-17,0,4,0,1.97788907665131e-17
+Cell; Joint categories,2.94902990916057e-17,0,4,0,1.13256321484378e-17

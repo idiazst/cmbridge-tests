@@ -1,0 +1,317 @@
+$fold
+[1] 1
+
+$weights
+ sieve_md landweber      pmmr
+ 0.000000  0.889928  0.110072
+
+$raw
+            sieve_md   landweber        pmmr
+sieve_md  0.04549716 0.010187566 0.010476093
+landweber 0.01018757 0.006181001 0.005545246
+pmmr      0.01047609 0.005545246 0.010685303
+attr(,"cell_scoring")
+attr(,"cell_scoring")$n
+[1] 889
+
+attr(,"cell_scoring")$cells
+[1] 222
+
+attr(,"cell_scoring")$singleton_cells
+[1] 111
+
+attr(,"cell_scoring")$paired_rows
+[1] 778
+
+
+$projection
+$projection$eigenvalues
+[1] 0.051249742 0.008921988 0.002191735
+
+$projection$removed_negative_eigenvalues
+[1] 0
+
+$projection$adjustment_norm
+[1] 3.714496e-17
+
+
+$lambda
+[1] 5.623413e-06
+
+$gamma
+[1] 0.03162278
+
+$solver
+$solver$method
+[1] "nonlinear Landweber"
+
+$solver$initial_loss
+[1] 0.02215916
+
+$solver$final_loss
+[1] 0.009695001
+
+$solver$iterations
+[1] 455
+
+$solver$maximum_step
+[1] 2.985602
+
+$solver$final_step
+[1] 0.09330005
+
+$solver$backtracking_reductions
+[1] 5
+
+$solver$coefficient_gradient
+[1] 1.577735e-09
+
+$solver$stopped_by_tolerance
+[1] TRUE
+
+$solver$regularization
+[1] "iteration stopping"
+
+
+          scale        loss grid_round selected failed failure scored_rows
+1  1.000000e-06 0.045226733          0    FALSE  FALSE                2666
+2  3.162278e-06 0.045124273          0    FALSE  FALSE                2666
+3  1.000000e-05 0.044803848          0    FALSE  FALSE                2666
+4  3.162278e-05 0.043824926          0    FALSE  FALSE                2666
+5  1.000000e-04 0.041032912          0    FALSE  FALSE                2666
+6  3.162278e-04 0.034368021          0    FALSE  FALSE                2666
+7  1.000000e-03 0.023261684          0    FALSE  FALSE                2666
+8  3.162278e-03 0.012449131          0    FALSE  FALSE                2666
+9  1.000000e-02 0.007012649          0    FALSE  FALSE                2666
+10 3.162278e-02 0.005850264          0     TRUE  FALSE                2666
+11 1.000000e-01 0.006114119          0    FALSE  FALSE                2666
+12 3.162278e-01 0.006461039          0    FALSE  FALSE                2666
+13 1.000000e+00 0.006655940          0    FALSE  FALSE                2666
+   paired_rows informative
+1         2361        TRUE
+2         2361        TRUE
+3         2361        TRUE
+4         2361        TRUE
+5         2361        TRUE
+6         2361        TRUE
+7         2361        TRUE
+8         2361        TRUE
+9         2361        TRUE
+10        2361        TRUE
+11        2361        TRUE
+12        2361        TRUE
+13        2361        TRUE
+$fold
+[1] 2
+
+$weights
+ sieve_md landweber      pmmr
+        0         1         0
+
+$raw
+            sieve_md  landweber       pmmr
+sieve_md  0.05746072 0.02635009 0.02502154
+landweber 0.02635009 0.02591068 0.02606804
+pmmr      0.02502154 0.02606804 0.03076717
+attr(,"cell_scoring")
+attr(,"cell_scoring")$n
+[1] 889
+
+attr(,"cell_scoring")$cells
+[1] 210
+
+attr(,"cell_scoring")$singleton_cells
+[1] 97
+
+attr(,"cell_scoring")$paired_rows
+[1] 792
+
+
+$projection
+$projection$eigenvalues
+[1] 0.092302313 0.019903734 0.001932523
+
+$projection$removed_negative_eigenvalues
+[1] 0
+
+$projection$adjustment_norm
+[1] 8.638853e-17
+
+
+$lambda
+[1] 1.778279e-06
+
+$gamma
+[1] 1.778279
+
+$solver
+$solver$method
+[1] "nonlinear Landweber"
+
+$solver$initial_loss
+[1] 0.0004773022
+
+$solver$final_loss
+[1] 0.0002142487
+
+$solver$iterations
+[1] 2000
+
+$solver$maximum_step
+[1] 9.104098
+
+$solver$final_step
+[1] 9.104098
+
+$solver$backtracking_reductions
+[1] 0
+
+$solver$coefficient_gradient
+[1] 2.11112e-07
+
+$solver$stopped_by_tolerance
+[1] FALSE
+
+$solver$regularization
+[1] "iteration stopping"
+
+
+          scale       loss grid_round selected failed failure scored_rows
+1  1.000000e-06 0.04902092          0    FALSE  FALSE                2667
+2  3.162278e-06 0.04894331          0    FALSE  FALSE                2667
+3  1.000000e-05 0.04870099          0    FALSE  FALSE                2667
+4  3.162278e-05 0.04796426          0    FALSE  FALSE                2667
+5  1.000000e-04 0.04589247          0    FALSE  FALSE                2667
+6  3.162278e-04 0.04112333          0    FALSE  FALSE                2667
+7  1.000000e-03 0.03379017          0    FALSE  FALSE                2667
+8  3.162278e-03 0.02782606          0    FALSE  FALSE                2667
+9  1.000000e-02 0.02595674          0    FALSE  FALSE                2667
+10 3.162278e-02 0.02590038          0    FALSE  FALSE                2667
+11 1.000000e-01 0.02590252          0    FALSE  FALSE                2667
+12 3.162278e-01 0.02587790          0    FALSE  FALSE                2667
+13 1.000000e+00 0.02586711          0    FALSE  FALSE                2667
+14 1.778279e+00 0.02586696          1     TRUE  FALSE                2667
+15 3.162278e+00 0.02586981          1    FALSE  FALSE                2667
+16 5.623413e+00 0.02587377          1    FALSE  FALSE                2667
+17 1.000000e+01 0.02587729          1    FALSE  FALSE                2667
+   paired_rows informative
+1         2385        TRUE
+2         2385        TRUE
+3         2385        TRUE
+4         2385        TRUE
+5         2385        TRUE
+6         2385        TRUE
+7         2385        TRUE
+8         2385        TRUE
+9         2385        TRUE
+10        2385        TRUE
+11        2385        TRUE
+12        2385        TRUE
+13        2385        TRUE
+14        2385        TRUE
+15        2385        TRUE
+16        2385        TRUE
+17        2385        TRUE
+$fold
+[1] 3
+
+$weights
+ sieve_md landweber      pmmr
+0.0000000 0.2476002 0.7523998
+
+$raw
+             sieve_md    landweber         pmmr
+sieve_md  0.041175678  0.007542576  0.002430103
+landweber 0.007542576  0.002007191 -0.003582660
+pmmr      0.002430103 -0.003582660 -0.005055958
+attr(,"cell_scoring")
+attr(,"cell_scoring")$n
+[1] 889
+
+attr(,"cell_scoring")$cells
+[1] 215
+
+attr(,"cell_scoring")$singleton_cells
+[1] 105
+
+attr(,"cell_scoring")$paired_rows
+[1] 784
+
+
+$projection
+$projection$eigenvalues
+[1]  0.042641492  0.002631628 -0.007146209
+
+$projection$removed_negative_eigenvalues
+[1] 1
+
+$projection$adjustment_norm
+[1] 0.007146209
+
+
+$lambda
+[1] 1e-05
+
+$gamma
+[1] 0.03162278
+
+$solver
+$solver$method
+[1] "nonlinear Landweber"
+
+$solver$initial_loss
+[1] 0.01983974
+
+$solver$final_loss
+[1] 0.01129737
+
+$solver$iterations
+[1] 400
+
+$solver$maximum_step
+[1] 3.199105
+
+$solver$final_step
+[1] 3.050904e-06
+
+$solver$backtracking_reductions
+[1] 20
+
+$solver$coefficient_gradient
+[1] 1.498395e-09
+
+$solver$stopped_by_tolerance
+[1] TRUE
+
+$solver$regularization
+[1] "iteration stopping"
+
+
+          scale         loss grid_round selected failed failure scored_rows
+1  1.000000e-06 0.0343421908          0    FALSE  FALSE                2667
+2  3.162278e-06 0.0342428871          0    FALSE  FALSE                2667
+3  1.000000e-05 0.0339327507          0    FALSE  FALSE                2667
+4  3.162278e-05 0.0329891852          0    FALSE  FALSE                2667
+5  1.000000e-04 0.0303297850          0    FALSE  FALSE                2667
+6  3.162278e-04 0.0241617104          0    FALSE  FALSE                2667
+7  1.000000e-03 0.0143910610          0    FALSE  FALSE                2667
+8  3.162278e-03 0.0054351449          0    FALSE  FALSE                2667
+9  1.000000e-02 0.0012415197          0    FALSE  FALSE                2667
+10 3.162278e-02 0.0005274443          0     TRUE  FALSE                2667
+11 1.000000e-01 0.0008075600          0    FALSE  FALSE                2667
+12 3.162278e-01 0.0010703562          0    FALSE  FALSE                2667
+13 1.000000e+00 0.0011872217          0    FALSE  FALSE                2667
+   paired_rows informative
+1         2367        TRUE
+2         2367        TRUE
+3         2367        TRUE
+4         2367        TRUE
+5         2367        TRUE
+6         2367        TRUE
+7         2367        TRUE
+8         2367        TRUE
+9         2367        TRUE
+10        2367        TRUE
+11        2367        TRUE
+12        2367        TRUE
+13        2367        TRUE

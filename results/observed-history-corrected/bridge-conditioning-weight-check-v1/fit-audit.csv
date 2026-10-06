@@ -1,0 +1,7 @@
+mechanism,configuration,raw_gram_max_difference,positive_interior_selections,candidate_failures,projection_norm
+binary_longitudinal,Original weights,2.08166817117217e-17,4,0,0.0266294799263726
+binary_longitudinal,Landweber weight CV,2.08166817117217e-17,8,0,0.0317048062613676
+discrete_dose,Original weights,5.3776427755281e-17,4,0,4.34374204159486e-17
+discrete_dose,Landweber weight CV,5.3776427755281e-17,8,0,3.71449626358833e-17
+discrete_dose,Fixed 0.01,5.3776427755281e-17,4,0,0.000408741537853626
+discrete_dose,Fixed 0.1,5.98479599211998e-17,4,0,0.000634396374702961

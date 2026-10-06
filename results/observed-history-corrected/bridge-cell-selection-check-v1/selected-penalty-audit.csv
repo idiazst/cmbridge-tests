@@ -1,0 +1,17 @@
+configuration,fit,scale,loss,failed_trials,interior
+Gaussian; Additive,final candidate,0.1,-0.000756321818383046,0,TRUE
+Gaussian; Additive,learner training sample 1,1.77827941003892e-10,-0.000618408507580467,0,TRUE
+Gaussian; Additive,learner training sample 2,0.1,-0.000775254578424223,0,TRUE
+Gaussian; Additive,learner training sample 3,0.177827941003892,-0.0006480166065356,0,TRUE
+Gaussian; Joint categories,final candidate,5.62341325190349e-06,-0.000719369167055795,0,TRUE
+Gaussian; Joint categories,learner training sample 1,3.16227766016838e-06,-0.000289759334369989,0,TRUE
+Gaussian; Joint categories,learner training sample 2,1.77827941003892e-06,-0.000836026024026806,0,TRUE
+Gaussian; Joint categories,learner training sample 3,5.62341325190349e-06,-0.000427089393592621,0,TRUE
+Cell; Additive,final candidate,0.0316227766016838,0.00637740669925135,0,TRUE
+Cell; Additive,learner training sample 1,0.00316227766016838,0.00740469802560432,0,TRUE
+Cell; Additive,learner training sample 2,0.0562341325190349,0.0103708798476406,0,TRUE
+Cell; Additive,learner training sample 3,0.0562341325190349,0.00401197840495472,0,TRUE
+Cell; Joint categories,final candidate,3.16227766016838e-05,0.00682609349626094,0,TRUE
+Cell; Joint categories,learner training sample 1,3.16227766016838e-05,0.0215445930659456,0,TRUE
+Cell; Joint categories,learner training sample 2,3.16227766016838e-05,0.0188518291578778,0,TRUE
+Cell; Joint categories,learner training sample 3,1.77827941003892e-05,0.00691748743426967,0,TRUE

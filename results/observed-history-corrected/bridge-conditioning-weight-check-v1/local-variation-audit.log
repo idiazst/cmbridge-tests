@@ -1,0 +1,16 @@
+             mechanism     n training_rows independent_target_parameters
+                <char> <int>         <int>                         <int>
+1: binary_longitudinal  4000          2667                             9
+2:       discrete_dose  4000          2667                             9
+   conditioning_combinations bridge_equation_maximum_error
+                       <int>                         <num>
+1:                       136                  2.700213e-16
+2:                       528                  2.850520e-16
+   local_information_minimum_eigenvalue local_information_condition_number
+                                  <num>                              <num>
+1:                          0.010591929                           97.16736
+2:                          0.008574578                          175.66872
+   local_optimally_weighted_prediction_rmse
+                                      <num>
+1:                                0.2162389
+2:                                0.2400213

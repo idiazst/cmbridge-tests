@@ -1,3 +1,13 @@
+# New diagnostic configurations (October6)
+
+cmbridge0.3.0.9021 now supports optional positive training-only CV for Landweber's conditioning-weight ridge. Modified lmtp remains1.6.0.9021. All GitHub validation checks passed for package847e187026ab5a68c456db0f9d49496ff7a869fc. The already running full cloud study retains its immutable0.3.0.9020 archive and original fingerprint.
+
+The [v7 saved n4000 checks](../../results/observed-history-corrected/ensemble-stability-v7-full-equations/REPORT.md) use full joint-category bridge conditioning and cell U-statistic selection. They completed, but worsened dose bridge RMSE; this is not an adopted repair. [Conditioning-weight diagnostics](../../results/observed-history-corrected/bridge-conditioning-weight-check-v1/REPORT.md) include all comparisons, independent score checks, positive interior penalties, solver limits and analytic moment calculations. [v8 complete checks](../../results/observed-history-corrected/ensemble-stability-v8-weight-cv/README.md) add CV for Landweber's conditioning-weight ridge, with the same strict shared training-only splits, data and other libraries. They remain in progress, with mixed outer-fit results; no revised full study is launched yet.
+
+Frozen sources and old audit helpers are preserved. Separate current postprocessing scripts implement the actual cell-scored checks; no failed criterion is loosened. No known-function or zero-penalty performance study, generating restrictions or Gaussian mean update is introduced. True population values enter only diagnostics after fitting.
+
+# Running study configuration and archived earlier revisions
+
 # Current ensemble stability revision
 
 Current packages: cmbridge 0.3.0.9020 and lmtp 1.6.0.9021. The two saved

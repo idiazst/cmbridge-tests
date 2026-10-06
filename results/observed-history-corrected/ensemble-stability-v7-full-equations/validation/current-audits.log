@@ -1,0 +1,5 @@
+Verified CV-selected bridge/adjoint ridge penalties, positive interior selections, shared training-only splits, unchanged data and outer folds, all bridge links, and EIF sums.
+Error in split(seq_len(nrow(z)), cell_key(z)) :
+  unused argument (cell_key(z))
+Calls: source -> withVisible -> eval -> eval
+Execution halted

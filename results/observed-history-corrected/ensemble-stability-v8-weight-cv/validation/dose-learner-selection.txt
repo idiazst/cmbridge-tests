@@ -1,0 +1,103 @@
+$fold
+[1] 2
+
+$cv_sieve
+          scale       loss grid_round selected failed failure scored_rows
+18 1.778279e-06 0.04339011          0     TRUE  FALSE                2667
+   paired_rows informative
+18        2385        TRUE
+
+$fold_lw
+$fold_lw[[1]]
+        scale       loss grid_round selected failed failure scored_rows
+10 0.03162278 0.04472581          0     TRUE  FALSE                1778
+   paired_rows informative
+10        1593        TRUE
+
+$fold_lw[[2]]
+   scale       loss grid_round selected failed failure scored_rows paired_rows
+11   0.1 0.01263157          0     TRUE  FALSE                1778        1591
+   informative
+11        TRUE
+
+$fold_lw[[3]]
+        scale       loss grid_round selected failed failure scored_rows
+10 0.03162278 0.02363004          0     TRUE  FALSE                1778
+   paired_rows informative
+10        1586        TRUE
+
+
+$fold_sieve
+$fold_sieve[[1]]
+       scale       loss grid_round selected failed failure scored_rows
+38 0.1778279 0.06860929          0     TRUE  FALSE                1778
+   paired_rows informative
+38        1593        TRUE
+
+$fold_sieve[[2]]
+       scale       loss grid_round selected failed failure scored_rows
+38 0.1778279 0.04487564          0     TRUE  FALSE                1778
+   paired_rows informative
+38        1591        TRUE
+
+$fold_sieve[[3]]
+          scale       loss grid_round selected failed failure scored_rows
+16 5.623413e-07 0.03550519          0     TRUE  FALSE                1778
+   paired_rows informative
+16        1586        TRUE
+
+
+$scored
+[1] 889 889 889
+
+$fold
+[1] 3
+
+$cv_sieve
+   scale       loss grid_round selected failed failure scored_rows paired_rows
+21 1e-05 0.02449173          0     TRUE  FALSE                2667        2367
+   informative
+21        TRUE
+
+$fold_lw
+$fold_lw[[1]]
+        scale       loss grid_round selected failed failure scored_rows
+10 0.03162278 0.01467279          0     TRUE  FALSE                1778
+   paired_rows informative
+10        1583        TRUE
+
+$fold_lw[[2]]
+      scale        loss grid_round selected failed failure scored_rows
+16 5.623413 -0.02606398          1     TRUE  FALSE                1778
+   paired_rows informative
+16        1562        TRUE
+
+$fold_lw[[3]]
+        scale       loss grid_round selected failed failure scored_rows
+10 0.03162278 0.01659205          0     TRUE  FALSE                1778
+   paired_rows informative
+10        1589        TRUE
+
+
+$fold_sieve
+$fold_sieve[[1]]
+       scale      loss grid_round selected failed failure scored_rows
+39 0.3162278 0.0470423          0     TRUE  FALSE                1778
+   paired_rows informative
+39        1583        TRUE
+
+$fold_sieve[[2]]
+          scale       loss grid_round selected failed failure scored_rows
+19 3.162278e-06 0.01810654          0     TRUE  FALSE                1778
+   paired_rows informative
+19        1562        TRUE
+
+$fold_sieve[[3]]
+       scale       loss grid_round selected failed failure scored_rows
+39 0.3162278 0.04906605          0     TRUE  FALSE                1778
+   paired_rows informative
+39        1589        TRUE
+
+
+$scored
+[1] 889 889 889

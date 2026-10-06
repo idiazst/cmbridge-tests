@@ -1,0 +1,11 @@
+attempt,lower,upper,minimum_loss,lower_boundary,upper_boundary,status,kind,horizon,fold,learner_fold,candidate
+0,1e-06,1,0.0091775934252239,TRUE,FALSE,boundary_failure,beta,1,2,3,landweber
+1,1e-07,1,0.009177584528967,TRUE,FALSE,boundary_failure,beta,1,2,3,landweber
+2,1e-08,1,0.00917758343974109,TRUE,FALSE,boundary_failure,beta,1,2,3,landweber
+3,1e-09,1,0.00917758309733678,TRUE,FALSE,boundary_failure,beta,1,2,3,landweber
+4,1e-10,1,0.00917758308658207,TRUE,FALSE,boundary_failure,beta,1,2,3,landweber
+0,1e-06,1,0.0258671065709603,FALSE,TRUE,boundary_failure,beta,2,2,0,landweber
+0,1e-10,1,0.0798690228093337,TRUE,FALSE,boundary_failure,adjoint,2,2,3,sieve_md
+1,1e-11,1,0.0798690194081019,TRUE,FALSE,boundary_failure,adjoint,2,2,3,sieve_md
+2,1e-12,1,0.0798689860087518,TRUE,FALSE,boundary_failure,adjoint,2,2,3,sieve_md
+3,1e-13,1,0.0798685356431064,TRUE,FALSE,boundary_failure,adjoint,2,2,3,sieve_md

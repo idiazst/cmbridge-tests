@@ -1,0 +1,20 @@
+              basis candidate bridge_rmse_R2_1 defining_equation_rmse
+             <char>    <char>            <num>                  <num>
+1: joint_categories  ensemble        0.1894484             0.07267298
+2: joint_categories  sieve_md        0.6360876             0.15622426
+3: joint_categories landweber        0.1919400             0.07531405
+4: joint_categories      pmmr        0.3426076             0.08949957
+   defining_equation_max_error raw_minimum raw_maximum
+                         <num>       <num>       <num>
+1:                   0.1532711    1.730351    3.475939
+2:                   0.4546765    1.324989    3.813704
+3:                   0.1678755    1.676318    3.563502
+4:                   0.3043150    1.889715    3.084084
+   application_bound_fraction
+                        <num>
+1:                          0
+2:                          0
+3:                          0
+4:                          0
+ sieve_md landweber      pmmr
+ 0.000000  0.889928  0.110072

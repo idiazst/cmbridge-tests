@@ -1,0 +1,19 @@
+mechanism,configuration,candidate,weight
+binary_longitudinal,Original weights,sieve_md,0.289063455894101
+binary_longitudinal,Original weights,landweber,0.281392806652277
+binary_longitudinal,Original weights,pmmr,0.429543737453623
+binary_longitudinal,Landweber weight CV,sieve_md,0.281319300139182
+binary_longitudinal,Landweber weight CV,landweber,0.341364392488058
+binary_longitudinal,Landweber weight CV,pmmr,0.37731630737276
+discrete_dose,Original weights,sieve_md,0
+discrete_dose,Original weights,landweber,0.154927444010675
+discrete_dose,Original weights,pmmr,0.845072555989325
+discrete_dose,Landweber weight CV,sieve_md,0
+discrete_dose,Landweber weight CV,landweber,0.889928020898854
+discrete_dose,Landweber weight CV,pmmr,0.110071979101146
+discrete_dose,Fixed 0.01,sieve_md,0
+discrete_dose,Fixed 0.01,landweber,0.727057157661371
+discrete_dose,Fixed 0.01,pmmr,0.272942842338629
+discrete_dose,Fixed 0.1,sieve_md,0
+discrete_dose,Fixed 0.1,landweber,0.872576146914546
+discrete_dose,Fixed 0.1,pmmr,0.127423853085454

@@ -1,0 +1,3 @@
+mechanism,n,training_rows,independent_target_parameters,conditioning_combinations,bridge_equation_maximum_error,local_information_minimum_eigenvalue,local_information_condition_number,local_optimally_weighted_prediction_rmse
+binary_longitudinal,4000,2667,9,136,2.70021298720075e-16,0.0105919293956402,97.1673638026282,0.216238927136864
+discrete_dose,4000,2667,9,528,2.85051975719079e-16,0.00857457799754673,175.668721358941,0.240021257913083

@@ -1,0 +1,50 @@
+"""Summarize saved weight diagnostics and analytic moments without fitting."""
+import csv, os
+from pathlib import Path
+root=Path(os.environ['WEIGHT_REPORT_ROOT'])
+def read(name): return list(csv.DictReader((root/name).open()))
+def table(head,rows):
+ return '| '+' | '.join(head)+' |\n| '+' | '.join(['---']*len(head))+' |\n'+''.join('| '+' | '.join(map(str,r))+' |\n' for r in rows)+'\n'
+metrics=read('bridge-comparison.csv'); weights=read('ensemble-weights.csv')
+audit=read('fit-audit.csv'); selected=read('positive-penalty-audit.csv'); solvers=read('solver-audit.csv')
+gradient=read('expected-training-gradient.csv')
+assert len(audit)==6 and len(selected)==32 and len(solvers)==18 and len(gradient)==8
+assert all(r['interior']=='TRUE' and float(r['selected'])>0 for r in selected)
+names={'binary_longitudinal':'Binary treatment','discrete_dose':'Numerical dose'}
+rows=[]
+for r in metrics:
+ if r['candidate']=='ensemble':
+  vals={x['candidate']:float(x['bridge_rmse']) for x in metrics if x['mechanism']==r['mechanism'] and x['configuration']==r['configuration']}
+  rows.append([names[r['mechanism']],r['configuration']]+[f'{vals[c]:.6f}' for c in ['ensemble','sieve_md','landweber','pmmr']]+[f"{float(r['equation_rmse']):.6f}"])
+text='''# Conditioning-weight diagnostics
+
+Training-only cross-validation of Landweber's conditioning-weight ridge improves the ensemble bridge in the first training sample of both saved n4000 datasets. **This is not yet a validated complete-estimator repair.** Separate checks across all three outer splits and both estimators are running. The original frozen cloud study is unchanged.
+
+These checks use the existing binary and numerical-dose datasets, replication 6, seeds5103006/5203006, first outer training sample, outcome at time 3. They are diagnostics, not new simulation replications. The full joint-category conditioning bases, target classes, all predictors, inverse-expit links, positive sieve penalty CV, shared training-only splits, cell U-statistic and required PSD projection are retained.
+
+The conditioning-weight ridge moderates the relative weights given to the conditioning directions. It does not penalize target coefficients or delete conditional equations. The default is1e-8. Two exploratory dose checks fixed it at0.01 and0.1 for sieve and Landweber. Those values were not adopted based on true-function errors. The proposed revision instead selects it for the Landweber bridge by training-only CV from thirteen initial positive values, 10^seq(-6,0,.5), extending boundary minima until interior or a recorded failure. Sieve and PMMR controls in this CV revision remain unchanged. Adjoint fits are unchanged.
+
+Population functions are used only after fitting. No known-function or zero-penalty performance simulations were run. No Gaussian mean update, generating restrictions or omitted treatment/history variables were introduced.
+
+'''+table(['Example','Configuration','Ensemble RMSE','Sieve RMSE','Landweber RMSE','PMMR RMSE','Ensemble equation RMSE'],rows)
+text+='RMSE compares the bridge with its unique population solution where both follow-up visits are observed. Equation RMSE checks the full bridge conditional equation over the population.\n\n![Binary comparisons](figures/binary_longitudinal-weight-comparison.png)\n\n![Dose comparisons](figures/discrete_dose-weight-comparison.png)\n\nAll predictions remain on equal axes, including unfavorable sieve fits. None hits the application bounds.\n\n'
+rows=[]
+for r in audit:
+ vals={x['candidate']:float(x['weight']) for x in weights if x['mechanism']==r['mechanism'] and x['configuration']==r['configuration']}
+ rows.append([names[r['mechanism']],r['configuration']]+[f'{vals[c]:.6f}' for c in ['sieve_md','landweber','pmmr']])
+text+='## Ensemble weights\n\n'+table(['Example','Configuration','Sieve','Landweber','PMMR'],rows)
+text+='## Why the training objective can favor smaller bridges\n\nThe algebraic check evaluates the expected squared empirical-moment objective at a valid full-support bridge, conditional on the existing training conditioning values. Its conditional bridge equations hold to less than4e-16. No nuisance model is fitted for this calculation.\n\nEven there, squared empirical moments contain a variance contribution. That contribution depends on the bridge function itself. Increasing the inverse-expit link intercept decreases the bridge and decreases this expected contribution. The intercept is not penalized by the sieve target ridge, so choosing that target penalty by CV alone does not remove this direction. Full joint-category conditioning has many directions with few observations, making this effect much larger with the original nearly unregularized conditioning weights.\n\n'
+text+=table(['Example','Conditioning basis','Weight ridge','Expected training objective at valid bridge','Expected intercept derivative','Actual training intercept derivative'],[[names[r['mechanism']],r['conditioning_basis'],r['conditioning_weight_ridge']]+[f'{float(r[c]):.6f}' for c in ['expected_training_moment_loss_at_valid_bridge','expected_intercept_derivative_at_valid_bridge','actual_intercept_derivative_at_valid_bridge']] for r in gradient])
+text+='The negative expected derivative favors reducing the bridge, but the actual derivative need not have that sign in every dataset. This calculation identifies a finite-sample mechanism; it does not prove the expected fitted coefficients equal the minimizer of this expected objective, or that this alone explains interval coverage. Multiple fitted parameters, penalty selection, treatment ratios and adjoint estimation also matter.\n\nThe training objective in these learners and the held-out U-statistic are different calculations. The latter removes self-products and was independently verified here. Replacing the nonlinear training objective directly by an indefinite U-statistic would require a separate optimization and existence analysis; it was not silently substituted.\n\n'
+variation=read('local-moment-variation.csv')
+text+='## Local variation implied by the defining equations\n\nAn additional algebraic check uses the full generating distribution to calculate a local first-order variation approximation for the nine-parameter Landweber bridge class at a valid solution. No known-function estimator or performance simulation is fitted. The conditional equations hold below3e-16, and all nine independent parameter directions are locally identified.\n\n'
+text+=table(['Example','Training observations','Independent coefficient directions','Local predicted bridge RMSE'],[[names[r['mechanism']],r['training_rows'],r['independent_target_parameters'],f"{float(r['local_optimally_weighted_prediction_rmse']):.6f}"] for r in variation])
+text+='This approximation uses ideal weighting of all full conditional moments. Even this calculation predicts substantial bridge estimation variation at the available training size: about0.216 for binary treatment and0.240 for dose. It is not a finite-sample guarantee, a coverage result or evidence that every larger observed error is unavoidable. It does show why exact class containment need not produce an almost exact diagonal in one n4000 dataset. The calculation uses only local changes in the defining equations, not fitting to supplied generating coefficients.\n\n'
+text+='A dose training-fit check also increased only the Landweber iteration ceiling, keeping its already selected positive ridge1.778279 unchanged. It met the unchanged tolerance at4786 iterations, yet bridge RMSE changed from0.446166 to0.446586 and predictions by at most0.001998. The poor fit in that training sample therefore is not repaired by merely running its final solver longer. This remains a solver diagnostic, not a truth-selected alternative fit.\n\n'
+text+='## Audit and remaining checks\n\nAll32 recorded penalty choices are positive, finite, successful exact minima and interior. Independent ordered-pair formulas reproduce all six raw ensemble score matrices within6e-17; PSD projection is preserved. All final candidate fits are retained, with zero candidate-failure records and no applied bound hits. The original fixed weights and CV-selected weights give identical sieve and PMMR predictions in each dataset, as expected because those controls did not change.\n\n'
+flag=[r for r in solvers if r['tolerance_reached']!='TRUE']
+assert len(flag)==1 and flag[0]['mechanism']=='binary_longitudinal' and flag[0]['configuration']=='Landweber weight CV'
+text+='One binary CV Landweber final fit reaches its existing2000-iteration regularization limit before its tolerance: full coefficient gradient4.10e-10. This is recorded in [solver-audit.csv](solver-audit.csv), not described as a tolerance pass. The complete-check adoption audit retains its stricter tolerance requirement; any additional solver check must preserve the original attempt and cannot loosen the threshold. A separate same-ridge check increased only the iteration ceiling to10000. It reached the unchanged tolerance at2196 iterations in0.502 seconds; maximum population-prediction change was0.0002786. This check is preserved separately and did not overwrite the original fit or select a penalty using truth. Other final diagnostic fits meet their recorded tolerances.\n\n'
+text+='cmbridge0.3.0.9021 adds opt-in Landweber weighting CV; existing libraries without a grid are unchanged. The package suite passed346 assertions with four existing spline warnings, and the lmtp nested-response suite passed25 assertions with no warnings. The two exploratory bridge fits took28.55/28.82 seconds. Their first attempts stopped before fitting at the package-version guard; both logs are preserved and no saved models were overwritten.\n\n[All comparisons](bridge-comparison.csv) · [Weights](ensemble-weights.csv) · [Positive penalty audit](positive-penalty-audit.csv) · [Score audit](fit-audit.csv) · [Expected and actual gradients](expected-training-gradient.csv).\n'
+(root/'REPORT.md').write_text(text)
+print('Reported six diagnostic models, all penalty choices, and the tolerance flag.')

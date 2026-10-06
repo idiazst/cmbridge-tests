@@ -1,0 +1,2 @@
+mechanism,fold,previous_bridge_rmse,new_bridge_rmse,maximum_prediction_change,elapsed_seconds,previous_iterations,new_iterations,previous_gradient,new_gradient,previous_tolerance_reached,new_tolerance_reached,weight_ridge,tol
+discrete_dose,2,0.446165933850686,0.446585961138578,0.00199771227058543,0.904,2000,4786,2.11111986284458e-07,1.99811233131278e-10,FALSE,TRUE,1.77827941003892,1e-10

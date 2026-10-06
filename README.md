@@ -7,7 +7,9 @@ Independent large-sample validation of the bridge and adjoint learners in
 
 [Completed n = 4,000 checks](results/observed-history-corrected/ensemble-stability-v6/REPORT.md) use cmbridge 0.3.0.9020 and the modified lmtp 1.6.0.9021. Both SDR and logistic TMLE completed at both outcome times, with all audits passing. The [full 1,200-dataset study](results/observed-history-corrected/full-ensemble-cloud-v1/README.md) is running on up to 80 standard GitHub workers after passing package, source, data and split checks. The [local ten-dataset timing results](results/observed-history-corrected/full-ensemble-study-v2/REPORT.md) remain separate and preliminary. [Simulation plan](reports/observed-history-simulation.md) and [reproducible scripts](simulations/observed_history_corrected/README.md) give the current configuration. Earlier stopped studies and failed attempts remain separate.
 
-[GitHub validation 37412467587](https://github.com/idiazst/cmbridge-tests/actions/runs/37412467587) passed every recorded check for cmbridge commit 4ad2f90870b4c3282dbaddc67dc2a0d61a7ec9f5.
+[GitHub validation37438851685](https://github.com/idiazst/cmbridge-tests/actions/runs/37438851685) passed every recorded check for cmbridge commit847e187026ab5a68c456db0f9d49496ff7a869fc (0.3.0.9021). This adds optional Landweber conditioning-weight CV; the running study retains its original pinned package archive.
+
+The [full-conditional-equation checks](results/observed-history-corrected/ensemble-stability-v7-full-equations/REPORT.md) completed but worsened the dose bridge and were not adopted. [Further conditioning-weight diagnostics](results/observed-history-corrected/bridge-conditioning-weight-check-v1/REPORT.md) retain fixed and CV-selected comparisons, all tuning/solver records, and the analytic finite-sample checks. The [new complete-estimator checks](results/observed-history-corrected/ensemble-stability-v8-weight-cv/README.md) remain in progress, with mixed outer-bridge results. No version is pooled with the original cloud study, and preliminary results are not final coverage estimates.
 
 Each GitHub Actions run:
 

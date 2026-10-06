@@ -1,0 +1,13 @@
+mechanism,n,fold,horizon,measured_validation_n,validation_clipped_n,validation_max_change,training_values_at_limits
+binary_longitudinal,4000,1,1,591,0,0,0
+binary_longitudinal,4000,1,2,641,0,0,0
+binary_longitudinal,4000,2,1,598,0,0,0
+binary_longitudinal,4000,2,2,623,0,0,0
+binary_longitudinal,4000,3,1,586,0,0,0
+binary_longitudinal,4000,3,2,623,0,0,0
+discrete_dose,4000,1,1,574,0,0,0
+discrete_dose,4000,1,2,646,0,0,0
+discrete_dose,4000,2,1,577,0,0,0
+discrete_dose,4000,2,2,567,0,0,0
+discrete_dose,4000,3,1,572,0,0,0
+discrete_dose,4000,3,2,598,0,0,0

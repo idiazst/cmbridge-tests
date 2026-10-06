@@ -1,0 +1,2 @@
+Error: if (name == "landweber") isTRUE(candidate$solver$stopped_by_tolerance) else isTRUE(candidate$solver$converged) is not TRUE
+Execution halted

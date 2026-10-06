@@ -1,0 +1,3 @@
+Positive finite successful exact interior minima: 96
+Failed trial records in outer capture tables: 0
+Exactly tied minimum sets: 1

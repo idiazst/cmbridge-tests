@@ -1,0 +1,8 @@
+Analytic expectation conditional on the existing training conditioning values.
+No nuisance fit, new simulated dataset, known-function performance study, or zero-penalty simulation.
+The inverse-expit bridge used in the calculation is a valid full-support solution; its conditional equation is independently checked.
+At that solution, the expected squared empirical moment objective contains a function-dependent variance term.
+The negative intercept derivative favors decreasing the bridge, although all conditional equations hold at the reference solution.
+The link ridge does not penalize the intercept, so its derivative in this direction is zero for every positive chosen lambda.
+Conditioning-weight stabilization reduces this finite-sample contribution without deleting equations.
+This does not prove that the actual optimizer or coverage errors are fully explained by this one direction.

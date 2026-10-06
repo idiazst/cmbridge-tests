@@ -1,0 +1,2 @@
+candidate_failure_records 0
+Population truth excluded from all estimation and selection.

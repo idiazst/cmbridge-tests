@@ -1,0 +1,12 @@
+       mechanism  fold previous_bridge_rmse new_bridge_rmse
+          <char> <int>                <num>           <num>
+1: discrete_dose     2            0.4461659        0.446586
+   maximum_prediction_change elapsed_seconds previous_iterations new_iterations
+                       <num>           <num>               <int>          <int>
+1:               0.001997712           0.904                2000           4786
+   previous_gradient new_gradient previous_tolerance_reached
+               <num>        <num>                     <lgcl>
+1:       2.11112e-07 1.998112e-10                      FALSE
+   new_tolerance_reached weight_ridge   tol
+                  <lgcl>        <num> <num>
+1:                  TRUE     1.778279 1e-10
