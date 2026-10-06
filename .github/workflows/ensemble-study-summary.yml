@@ -11,6 +11,10 @@ on:
         description: Report only the early batches as preliminary
         type: boolean
         default: false
+      checkpoint_runs:
+        description: Optional comma-separated resume run IDs to merge with the original run
+        type: string
+        default: ''
 
 permissions:
   contents: read
@@ -44,9 +48,47 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           pattern: ${{ inputs.early_checkpoints && 'cloud-early' || 'cloud-shard' }}-${{ inputs.study_run }}-*
-          path: cloud-incoming
+          path: cloud-raw-incoming
           github-token: ${{ secrets.GITHUB_TOKEN }}
           run-id: ${{ inputs.study_run }}
+      - name: Download additional resumed checkpoints
+        if: inputs.checkpoint_runs != ''
+        env:
+          CHECKPOINT_RUNS: ${{ inputs.checkpoint_runs }}
+          GH_TOKEN: ${{ github.token }}
+        shell: python3 {0}
+        run: |
+          import json, os, pathlib, re, subprocess
+          repo = os.environ['GITHUB_REPOSITORY']
+          runs = os.environ['CHECKPOINT_RUNS'].split(',')
+          assert all(re.fullmatch(r'[0-9]+', run) for run in runs)
+          assert len(runs) == len(set(runs))
+          for run in runs:
+              pages = json.loads(subprocess.check_output(['gh','api','--paginate','--slurp',
+                  f'repos/{repo}/actions/runs/{run}/artifacts?per_page=100']))
+              artifacts = [item for page in pages for item in page['artifacts']]
+              matching = [item for item in artifacts if re.fullmatch(
+                  rf'cloud-resume-{run}-[0-9]+', item['name'])]
+              assert matching, f'No saved resume artifacts for run {run}'
+              for item in matching:
+                  assert not item['expired'], 'Retain local copies before expiration.'
+                  destination = pathlib.Path('cloud-raw-incoming') / item['name']
+                  subprocess.run(['gh','run','download',run,'--repo',repo,
+                      '--name',item['name'],'--dir',str(destination)],check=True)
+      - name: Merge byte-identical duplicates before aggregation
+        shell: python3 {0}
+        run: |
+          import os, pathlib, re, subprocess
+          incoming = pathlib.Path('cloud-raw-incoming')
+          pattern = re.compile(r'cloud-(?:early|shard|resume)-[0-9]+-([0-9]+)$')
+          shards = sorted({int(pattern.fullmatch(path.name).group(1))
+              for path in incoming.iterdir() if path.is_dir() and pattern.fullmatch(path.name)})
+          assert shards, 'No checkpoint artifacts to summarize'
+          for shard in shards:
+              subprocess.run(['python3','simulations/observed_history_corrected/restore_cloud_checkpoints.py',
+                  '--incoming',str(incoming),'--output',
+                  str(pathlib.Path(os.environ['CLOUD_INCOMING']) / f'cloud-merged-{shard}'),
+                  '--shard',str(shard)],check=True)
       - name: Verify and extract frozen sources and shared Linux library
         run: |
           cd "$FROZEN_ROOT"
@@ -65,6 +107,7 @@ jobs:
           cp "$FROZEN_ROOT/PACKAGE-SHA256SUMS" "$FROZEN_ROOT/SOURCE-SHA256SUMS" "$SIM_OUTPUT/"
           cp "$GITHUB_WORKSPACE/cloud-preparation/cloud-prepare/dependency-versions.csv" "$SIM_OUTPUT/"
           echo '${{ inputs.study_run }}' > "$SIM_OUTPUT/parent-study-run.txt"
+          echo '${{ inputs.checkpoint_runs }}' > "$SIM_OUTPUT/resume-runs.txt"
           echo '${{ github.sha }}' > "$SIM_OUTPUT/aggregation-commit.txt"
       - uses: actions/upload-artifact@v4
         if: always()
