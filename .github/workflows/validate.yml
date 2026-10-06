@@ -38,9 +38,11 @@ jobs:
       - name: Install validation dependencies
         shell: Rscript {0}
         run: |
+          Sys.setenv(USE_BUNDLED_LIBUV = "1")
           packages <- c("Matrix", "glmnet", "digest", "testthat")
           missing <- packages[!vapply(packages, requireNamespace, logical(1), quietly = TRUE)]
-          if (length(missing)) install.packages(missing, repos = "https://cloud.r-project.org")
+          if (length(missing)) install.packages(missing, repos = getOption("repos"))
+          stopifnot(all(vapply(packages, requireNamespace, logical(1), quietly = TRUE)))
 
       - name: Install cmbridge
         run: R CMD INSTALL --install-tests _cmbridge_package
@@ -106,6 +108,7 @@ jobs:
           echo "=== Adjoint ==="
           cat "results/run-${GITHUB_RUN_ID}/adjoint/validation_summary.csv" || true
           cat "results/run-${GITHUB_RUN_ID}/ensemble/validation_summary.csv" || true
+          cat "results/run-${GITHUB_RUN_ID}/linked-bridge/validation_summary.csv" || true
 
       - name: Upload run artifacts
         if: always()
@@ -130,6 +133,8 @@ jobs:
         if: steps.unit.outcome != 'success' || steps.linked.outcome != 'success' || steps.bridge.outcome != 'success' || steps.adjoint.outcome != 'success' || steps.ensemble.outcome != 'success'
         run: |
           echo "At least one validation failed."
+          echo "Unit:    ${{ steps.unit.outcome }}"
+          echo "Linked:  ${{ steps.linked.outcome }}"
           echo "Bridge:  ${{ steps.bridge.outcome }}"
           echo "Adjoint: ${{ steps.adjoint.outcome }}"
           echo "Ensemble: ${{ steps.ensemble.outcome }}"
