@@ -1,0 +1,3 @@
+mechanism,fold,horizon,prediction_difference,weight_difference,lambda_difference
+binary_longitudinal,2,2,0,0,0
+discrete_dose,2,2,0,0,0

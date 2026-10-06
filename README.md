@@ -3,6 +3,12 @@
 Independent large-sample validation of the bridge and adjoint learners in
 [`idiazst/cmbridge`](https://github.com/idiazst/cmbridge).
 
+## Current observed-history ensemble checks
+
+[Saved n = 4,000 checks and current plots](results/observed-history-corrected/ensemble-stability-v6/PRELIMINARY.md) use cmbridge 0.3.0.9020 and the modified lmtp 1.6.0.9021. The ensemble recovery plots have improved; complete SDR/TMLE checks are running. The approved full study starts after these checks and audits pass. [Simulation plan](reports/observed-history-simulation.md) and [reproducible scripts](simulations/observed_history_corrected/README.md) give the current configuration. Earlier stopped studies and failed attempts remain separate.
+
+[GitHub validation 37412467587](https://github.com/idiazst/cmbridge-tests/actions/runs/37412467587) passed every recorded check for cmbridge commit 4ad2f90870b4c3282dbaddc67dc2a0d61a7ec9f5.
+
 Each GitHub Actions run:
 
 1. installs a fresh R release on Ubuntu;

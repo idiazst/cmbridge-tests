@@ -1,0 +1,5 @@
+attempt,lower,upper,minimum_loss,lower_boundary,upper_boundary,status,kind,horizon,fold,learner_fold,candidate
+0,1e-10,1,0.0132418927631636,TRUE,FALSE,boundary_failure,adjoint,2,2,1,sieve_md
+1,1e-11,1,0.0132418894087063,TRUE,FALSE,boundary_failure,adjoint,2,2,1,sieve_md
+0,1e-10,1,0.0207727379982598,TRUE,FALSE,boundary_failure,adjoint,2,2,2,sieve_md
+0,1e-10,1,0.00257370910057614,TRUE,FALSE,boundary_failure,adjoint,2,2,0,sieve_md
