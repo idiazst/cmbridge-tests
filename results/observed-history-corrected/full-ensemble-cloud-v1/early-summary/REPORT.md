@@ -4,6 +4,8 @@
 
 Completed 24 of 1,200 planned datasets.
 
+Completion before a checkpoint or time limit may depend on the generated data and fitting difficulty. The saved subset is not necessarily a random sample of the planned replications; do not interpret its provisional coverage or bias as final performance.
+
 Both two-time mechanisms use n =   500, 1,000, 4,000, with 200 replications per sample size and 80 parallel R workers. The numerical dose takes values 0, 1, 2, and 3, with the policy increasing it by one, capped at 3.
 
 Bridge candidates are sieve minimum distance with fixed intercept and all main effects plus joint-category deviations, preconditioned Landweber with fixed intercept and all main effects, and PMMR with Gaussian features. The first two inverse-expit classes contain a valid bridge solution for both mechanisms; all three bridge candidates use the inverse-expit parameterization. Adjoint candidates are a saturated joint-category sieve, Landweber with splines, and PMMR, all with an unrestricted identity link. Saturated L1 is excluded from the cmbridge libraries. Outcome regressions combine saturated L1, MARS, and a mean; treatment-ratio classification combines saturated L1 and a mean. MARS is used only for outcome regressions. SDR and TMLE share generated data, sample assignments, and bridge and adjoint fits. Both receive the one-step bridge correction. Positive sieve ridge and L1 penalties are chosen by cross-validation inside the fitting samples. This study does not assess robustness under deliberate misspecification.
@@ -149,29 +151,28 @@ The bridge and adjoint may have multiple solutions; conditional-equation errors 
 
 [All candidate weights](ensemble_weights.csv) and [weight summaries](ensemble_weight_summary.csv) retain the expanded library, including candidates selected with zero weight.
 
-
 ## Conditional equations and estimation error
 
-Evaluate each saved fitted contribution over the complete discrete population, then average the outer training samples using their validation sample sizes. The two contributions add to the fixed-function population error. Outcome times are reported separately.
+Evaluate each saved fitted contribution over the complete discrete population, then average the outer training samples using their validation sample sizes. The two contributions add to the fixed-function population error. Outcome times are reported separately. These values differ from the sample means of EIF components above.
 
-For SDR this evaluates the expectation of contributions from the fitted nuisance functions. TMLE targeting uses validation outcomes, so holding its final targeted functions fixed is a diagnostic calculation, not a conditional expectation given training data alone.
+TMLE targeting uses validation outcomes, so holding its final targeted functions fixed is a diagnostic calculation, not a conditional expectation given training data alone.
 
-| Treatment | n | Outcome time | Estimator | Successful | Population error | Sequential contribution | Bridge/adjoint contribution |
+| Mechanism | n | Outcome time | Estimator | Successful | Population error | Sequential contribution | Bridge/adjoint contribution |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Binary treatment | 1000 | 2 | SDR | 9 | 0.003696 | 0.001720 | 0.001976 |
-| Binary treatment | 1000 | 3 | SDR | 9 | 0.051415 | 0.035903 | 0.015513 |
-| Binary treatment | 1000 | 2 | TMLE | 9 | 0.003307 | 0.001331 | 0.001976 |
-| Binary treatment | 1000 | 3 | TMLE | 9 | -0.014529 | -0.030041 | 0.015513 |
-| Binary treatment | 4000 | 2 | SDR | 6 | -0.000418 | -0.000433 | 0.000015 |
-| Binary treatment | 4000 | 3 | SDR | 6 | 0.003628 | 0.004014 | -0.000386 |
-| Binary treatment | 4000 | 2 | TMLE | 6 | -0.000397 | -0.000413 | 0.000015 |
-| Binary treatment | 4000 | 3 | TMLE | 6 | 0.004005 | 0.004391 | -0.000386 |
-| Binary treatment | 500 | 2 | SDR | 9 | 0.000384 | 0.000375 | 0.000009 |
-| Binary treatment | 500 | 3 | SDR | 9 | -0.019204 | 0.009715 | -0.028919 |
-| Binary treatment | 500 | 2 | TMLE | 9 | -0.002379 | -0.002387 | 0.000009 |
-| Binary treatment | 500 | 3 | TMLE | 9 | -0.034672 | -0.005752 | -0.028919 |
+| Two-time binary treatment |  500 | 2 | SDR | 9 | 0.000384 | 0.000375 | 0.000009 |
+| Two-time binary treatment |  500 | 2 | TMLE | 9 | -0.002379 | -0.002387 | 0.000009 |
+| Two-time binary treatment |  500 | 3 | SDR | 9 | -0.019204 | 0.009715 | -0.028919 |
+| Two-time binary treatment |  500 | 3 | TMLE | 9 | -0.034672 | -0.005752 | -0.028919 |
+| Two-time binary treatment | 1000 | 2 | SDR | 9 | 0.003696 | 0.001720 | 0.001976 |
+| Two-time binary treatment | 1000 | 2 | TMLE | 9 | 0.003307 | 0.001331 | 0.001976 |
+| Two-time binary treatment | 1000 | 3 | SDR | 9 | 0.051415 | 0.035903 | 0.015513 |
+| Two-time binary treatment | 1000 | 3 | TMLE | 9 | -0.014529 | -0.030041 | 0.015513 |
+| Two-time binary treatment | 4000 | 2 | SDR | 6 | -0.000418 | -0.000433 | 0.000015 |
+| Two-time binary treatment | 4000 | 2 | TMLE | 6 | -0.000397 | -0.000413 | 0.000015 |
+| Two-time binary treatment | 4000 | 3 | SDR | 6 | 0.003628 | 0.004014 | -0.000386 |
+| Two-time binary treatment | 4000 | 3 | TMLE | 6 | 0.004005 | 0.004391 | -0.000386 |
 
-The full-support saturated adjoint class contains a valid solution. The implemented sieve dictionary uses measured training combinations and mean continuation for unseen values; its realized finite-sample class need not contain a population solution. The fixed main-effect bridge classes contain a valid solution on the full support. See the [saved Mac equation and class audit](https://github.com/idiazst/cmbridge-tests/blob/main/results/observed-history-corrected/full-ensemble-study-v2/diagnostic-evaluation/REPORT.md) for actual examples; those Mac estimates are not pooled into this cloud study.
+The full-support saturated adjoint class contains a valid solution. The implemented sieve dictionary uses measured training combinations and mean continuation for unseen values; its realized finite-sample class need not contain a population solution. The fixed main-effect bridge classes contain a valid solution on the full support. Class containment alone does not ensure that the fitted moments identify every function in a larger sieve class or that estimates are accurate in a finite sample. These limitations are retained in the reports and have not been used to discard study results.
 
 [Population values by outcome time](population-error-by-outcome-time.csv) retain the numerical calculations.
 

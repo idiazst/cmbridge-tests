@@ -1,0 +1,49 @@
+             mechanism outcome_time conditioning_combinations
+                <char>        <int>                     <int>
+1: binary_longitudinal            2                         8
+2: binary_longitudinal            3                       136
+3:       discrete_dose            2                        16
+4:       discrete_dose            3                       528
+   target_combinations polynomial_columns polynomial_operator_rank
+                 <int>              <int>                    <int>
+1:                   8                 10                        4
+2:                 144                 18                        9
+3:                   8                 10                        4
+4:                 288                 18                        9
+   full_conditional_operator_rank landweber_main_target_rank
+                            <int>                      <int>
+1:                              8                          4
+2:                            136                          9
+3:                              8                          4
+4:                            272                          9
+   polynomial_moment_jacobian_rank_for_main_target
+                                             <int>
+1:                                               4
+2:                                               9
+3:                                               4
+4:                                               9
+   reference_full_equation_max_error alternative_polynomial_moment_max_error
+                               <num>                                   <num>
+1:                      4.440892e-16                            5.551115e-16
+2:                      2.220446e-16                            4.440892e-16
+3:                      1.332268e-15                            2.220446e-16
+4:                      4.440892e-16                            8.881784e-16
+   alternative_full_equation_rmse alternative_full_equation_max_error
+                            <num>                               <num>
+1:                     0.06273778                           0.1044232
+2:                     0.05642480                           0.1488679
+3:                     0.04437819                           0.1049511
+4:                     0.03621697                           0.1488679
+   alternative_minimum alternative_maximum
+                 <num>               <num>
+1:            1.382646            3.241198
+2:            1.599593            3.342068
+3:            1.593779            3.527635
+4:            1.604997            3.340947
+   target_class_representation_max_error
+                                   <num>
+1:                                     0
+2:                                     0
+3:                                     0
+4:                                     0
+Different positive functions satisfy all polynomial moments but violate full defining equations.

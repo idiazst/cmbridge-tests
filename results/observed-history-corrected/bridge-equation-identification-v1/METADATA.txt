@@ -1,0 +1,8 @@
+Diagnostic calculations completed October 6, 2026.
+Full-population algebra only. No sample draws or nuisance models are fitted.
+Frozen cmbridge 0.3.0.9020, package main 4ad2f90870b4c3282dbaddc67dc2a0d61a7ec9f5.
+Frozen modified lmtp 1.6.0.9021.
+All 229 frozen source checksums and three archives verified without changes to the running study.
+Population truth never enters estimated-model fitting or penalty/weight selection.
+Raw RDS remain local; published logs and session records normalize trailing whitespace only.
+No known-function performance study, zero-penalty simulation, or Gaussian mean update.

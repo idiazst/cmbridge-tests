@@ -1,0 +1,4 @@
+Error: unexpected symbol in:
+"  file.path(output,'AUDIT.txt'))
+print"
+Execution halted

@@ -12,6 +12,7 @@ status<-if(stopped)'**The study was stopped at the user\'s request. Saved result
  '**Implementation and timing check only; this is not the 200-replication study.**'
 lines<-c('# Observed-history simulation results','',status,'',
  sprintf('Completed %s of %s planned datasets.',format(nrow(log),big.mark=','),format(nrow(design),big.mark=',')),'',
+ if(!complete)'Completion before a checkpoint or time limit may depend on the generated data and fitting difficulty. The saved subset is not necessarily a random sample of the planned replications; do not interpret its provisional coverage or bias as final performance.','',
  sprintf('Both two-time mechanisms use n = %s, with %d replications per sample size and %d parallel R workers. The numerical dose takes values 0, 1, 2, and 3, with the policy increasing it by one, capped at 3.',
  paste(format(sort(details$sizes),big.mark=','),collapse=', '),details$replications,details$workers),'',
  'Bridge candidates are sieve minimum distance with fixed intercept and all main effects plus joint-category deviations, preconditioned Landweber with fixed intercept and all main effects, and PMMR with Gaussian features. The first two inverse-expit classes contain a valid bridge solution for both mechanisms; all three bridge candidates use the inverse-expit parameterization. Adjoint candidates are a saturated joint-category sieve, Landweber with splines, and PMMR, all with an unrestricted identity link. Saturated L1 is excluded from the cmbridge libraries. Outcome regressions combine saturated L1, MARS, and a mean; treatment-ratio classification combines saturated L1 and a mean. MARS is used only for outcome regressions. SDR and TMLE share generated data, sample assignments, and bridge and adjoint fits. Both receive the one-step bridge correction. Positive sieve ridge and L1 penalties are chosen by cross-validation inside the fitting samples. This study does not assess robustness under deliberate misspecification.','',
@@ -80,17 +81,29 @@ if(file.exists(file.path(outdir,'ensemble_weight_summary.csv'))) lines<-c(lines,
  '[All candidate weights](ensemble_weights.csv) and [weight summaries](ensemble_weight_summary.csv) retain the expanded library, including candidates selected with zero weight.','')
 diagnostic_file<-file.path(outdir,'population_diagnostic_summary.csv')
 if(file.exists(diagnostic_file)){
- dg<-fread(diagnostic_file)
- ds<-dcast(dg[horizon==2L & variable %in% c('population_bias','sequential_remainder','bridge_remainder')],
-  mechanism+n+estimator~variable,value.var='mean')
+ dg<-fread(file.path(outdir,'population_diagnostics.csv'))
+ component_columns<-c('population_bias','sequential_remainder','bridge_remainder')
+ per_dataset<-dg[,lapply(.SD,function(z)sum(z*fold_weight)),
+  by=.(mechanism,n,replicate,seed,horizon,estimator,scenario),.SDcols=component_columns]
+ ds<-per_dataset[,c(list(successful=.N),lapply(.SD,mean)),
+  by=.(mechanism,n,horizon,estimator,scenario),.SDcols=component_columns]
+ fwrite(ds,file.path(outdir,'population-error-by-outcome-time.csv'))
  lines<-c(lines,'## Conditional equations and estimation error','',
- 'For each outer training sample, evaluate its fitted functions over the complete generating distribution. The population error below is the expectation of its estimator contribution minus the true parameter. Average these expectations using the outer validation sample sizes, then average across completed replications. The sequential-regression and bridge contributions add to the population error. They describe fitted-function estimation error separately from variation in the final evaluation sample.','',
- table(ds[order(mechanism,n,estimator),.(Mechanism=labels[mechanism],n,Estimator=toupper(estimator),
-  `Population error`=sprintf('%.5f',population_bias),
-  `Sequential-regression contribution`=sprintf('%.5f',sequential_remainder),
-  `Bridge contribution`=sprintf('%.5f',bridge_remainder))]),
-  'The libraries contain the required functions. Coverage additionally depends on how accurately those functions are estimated. Sparse full-history combinations and regularization may affect finite-sample performance. The study retains this behavior and does not alter the generating distributions or learner settings in response to coverage.','')
+ 'Evaluate each saved fitted contribution over the complete discrete population, then average the outer training samples using their validation sample sizes. The two contributions add to the fixed-function population error. Outcome times are reported separately. These values differ from the sample means of EIF components above.','',
+ 'TMLE targeting uses validation outcomes, so holding its final targeted functions fixed is a diagnostic calculation, not a conditional expectation given training data alone.','',
+ table(ds[order(mechanism,n,horizon,estimator),.(Mechanism=labels[mechanism],n,
+  `Outcome time`=horizon+1L,Estimator=toupper(estimator),Successful=successful,
+  `Population error`=sprintf('%.6f',population_bias),
+  `Sequential contribution`=sprintf('%.6f',sequential_remainder),
+  `Bridge/adjoint contribution`=sprintf('%.6f',bridge_remainder))]),
+  'The full-support saturated adjoint class contains a valid solution. The implemented sieve dictionary uses measured training combinations and mean continuation for unseen values; its realized finite-sample class need not contain a population solution. The fixed main-effect bridge classes contain a valid solution on the full support. Class containment alone does not ensure that the fitted moments identify every function in a larger sieve class or that estimates are accurate in a finite sample. These limitations are retained in the reports and have not been used to discard study results.','')
+ lines<-c(lines,'[Population values by outcome time](population-error-by-outcome-time.csv) retain the numerical calculations.','')
 }
+if(file.exists(file.path(outdir,'coverage-including-failures.csv')))lines<-c(lines,
+ '## Coverage including failed fits','',
+ 'The preceding coverage estimates describe successful fits. The additional [table](coverage-including-failures.csv) counts a failed fit as producing no interval and uses all completed datasets as the denominator. Pending datasets are excluded. Its Monte Carlo intervals describe simulation uncertainty.','',
+ '![Coverage including failed fits](figures/coverage-including-failures.png)','')
+while(length(lines)&&!nzchar(tail(lines,1L)))lines<-head(lines,-1L)
 writeLines(lines,file.path(outdir,'REPORT.md'))
 if(requireNamespace('markdown',quietly=TRUE))markdown::mark_html(file.path(outdir,'REPORT.md'),output=file.path(outdir,'REPORT.html'))
 cat('Report written to',file.path(outdir,'REPORT.md'),'\n')

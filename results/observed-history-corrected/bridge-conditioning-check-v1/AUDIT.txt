@@ -1,0 +1,6 @@
+The initial fits completed and were saved successfully.
+Both original script invocations then failed at the final reporting expression because of a missing parenthesis.
+The two attempt logs are preserved. After repairing that expression, the retry guard refused to overwrite the saved models.
+This separate read-only script audited the existing models and completed the comparison; it did not refit them.
+The polynomial fit reproduces the original saved ensemble predictions within 1e-9.
+No final candidate failures, application-bound hits, or invalid selected penalties.
