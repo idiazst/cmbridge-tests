@@ -5,7 +5,7 @@ Independent large-sample validation of the bridge and adjoint learners in
 
 ## Current observed-history ensemble checks
 
-[Saved n = 4,000 checks and current plots](results/observed-history-corrected/ensemble-stability-v6/PRELIMINARY.md) use cmbridge 0.3.0.9020 and the modified lmtp 1.6.0.9021. The ensemble recovery plots have improved; complete SDR/TMLE checks are running. The approved full study starts after these checks and audits pass. [Simulation plan](reports/observed-history-simulation.md) and [reproducible scripts](simulations/observed_history_corrected/README.md) give the current configuration. Earlier stopped studies and failed attempts remain separate.
+[Completed n = 4,000 checks](results/observed-history-corrected/ensemble-stability-v6/REPORT.md) use cmbridge 0.3.0.9020 and the modified lmtp 1.6.0.9021. Both SDR and logistic TMLE completed at both outcome times, with all audits passing. The [full 1,200-dataset study](results/observed-history-corrected/full-ensemble-study-v2/README.md) started at 00:28 EDT on October 6 with ten workers; repeated-sample results remain pending. [Simulation plan](reports/observed-history-simulation.md) and [reproducible scripts](simulations/observed_history_corrected/README.md) give the current configuration. Earlier stopped studies and failed attempts remain separate.
 
 [GitHub validation 37412467587](https://github.com/idiazst/cmbridge-tests/actions/runs/37412467587) passed every recorded check for cmbridge commit 4ad2f90870b4c3282dbaddc67dc2a0d61a7ec9f5.
 

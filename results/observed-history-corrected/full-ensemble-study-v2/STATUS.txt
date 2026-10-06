@@ -1,0 +1,4 @@
+Running the revised study with missingness at both follow-ups.
+Completed datasets: 0 of 1200
+Remaining datasets: 1200
+Workers: 10

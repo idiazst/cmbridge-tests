@@ -1,0 +1,20 @@
+             mechanism estimator horizon population_bias sequential_remainder
+                <char>    <char>   <int>           <num>                <num>
+1: binary_longitudinal       sdr       1    0.0011781757         0.0021982814
+2: binary_longitudinal       sdr       2    0.0006867892         0.0033948602
+3: binary_longitudinal      tmle       1    0.0004523995         0.0014725053
+4: binary_longitudinal      tmle       2   -0.0021635511         0.0005445199
+5:       discrete_dose       sdr       1   -0.0014901659        -0.0029527610
+6:       discrete_dose       sdr       2   -0.0028936276        -0.0032887227
+7:       discrete_dose      tmle       1   -0.0013542668        -0.0028168618
+8:       discrete_dose      tmle       2   -0.0014015447        -0.0017966397
+   bridge_remainder bridge_equation_max_error adjoint_equation_max_error
+              <num>                     <num>                      <num>
+1:     -0.001020106                0.08877547                 0.07589559
+2:     -0.002708071                0.20601989                 5.52235006
+3:     -0.001020106                0.08877547                 0.07589559
+4:     -0.002708071                0.20601989                 5.52235006
+5:      0.001462595                0.12780623                 0.17708616
+6:      0.000395095                0.19296085                 2.20751984
+7:      0.001462595                0.12780623                 0.17708616
+8:      0.000395095                0.19296085                 2.20751984

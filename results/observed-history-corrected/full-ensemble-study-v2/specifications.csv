@@ -1,0 +1,3 @@
+estimator,beta_correct,lambda_correct,ratio_correct,m_correct
+sdr,TRUE,TRUE,TRUE,TRUE
+tmle,TRUE,TRUE,TRUE,TRUE

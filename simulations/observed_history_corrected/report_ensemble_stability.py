@@ -96,6 +96,19 @@ text += table(['Example', 'Outcome time', 'Estimator', 'Truth', 'Estimate', 'SE'
                for r in estimates])
 misses = sum(not float(r['lower']) <= float(r['truth']) <= float(r['upper']) for r in estimates)
 text += f'{misses} of eight pointwise intervals exclude the truth in these two datasets.\n\n'
+diagnostic_path = root / 'complete-population-diagnostics.csv'
+if diagnostic_path.exists():
+    grouped = collections.defaultdict(lambda: collections.defaultdict(float))
+    for row in read(diagnostic_path):
+        key = (row['mechanism'], row['estimator'], row['horizon'])
+        for column in ['population_bias', 'sequential_remainder', 'bridge_remainder']:
+            grouped[key][column] += float(row[column]) * float(row['fold_weight'])
+    text += '## Examination of the excluded intervals\n\n'
+    text += 'Both excluded intervals concern the numerical-dose outcome at time 2 in the same dataset. To examine this, evaluate each fitted estimator contribution over every point of the known generating distribution and weight the three training fits by their validation sample sizes. The resulting expected estimation errors below are much smaller than the observed error of about -0.028. This points toward variation in the evaluation observations in this dataset; it does not establish repeated-sample coverage or exclude other finite-sample effects. The full study will examine their frequency and standard-error calibration.\n\n'
+    text += table(['Example', 'Outcome time', 'Estimator', 'Expected estimation error'],
+                  [[names[m], int(h) + 1, e.upper(), f'{value["population_bias"]:.6f}']
+                   for (m, e, h), value in grouped.items()])
+    text += 'The [complete population diagnostics](complete-population-diagnostics.csv) also retain the separate second-order contributions and conditional-equation errors. Those second-order contributions are different from the sample mean EIF components in the preceding table. The sequential second-order contribution compares the sequential estimate with the parameter defined using its fitted bridge; the bridge/adjoint contribution then accounts for the bridge error and correction. Their sum equals the expected estimation error. True functions are used only for these diagnostics.\n\n'
 text += '## Recorded fitting failures\n\n'
 text += f'The final checks have zero estimator error rows. Their shared nested bridge caches record {len(candidate_failures)} candidate-failure events and {len(trial_failures)} failed penalty-trial records. Records are not counts of independent people or distinct statistical failures: the same training fit may have multiple trials or scoring folds. All records are retained in the case folders.\n\n'
 text += '''## Audits and full study

@@ -1,0 +1,11 @@
+2026-10-06 00:09:19 Fitting nuisance functions for outer split 1 
+2026-10-06 00:09:20 Saved nuisance diagnostics for outer split 1 
+2026-10-06 00:09:20 Fitting nuisance functions for outer split 2 
+2026-10-06 00:09:20 Saved nuisance diagnostics for outer split 2 
+2026-10-06 00:09:20 Fitting nuisance functions for outer split 3 
+2026-10-06 00:09:20 Saved nuisance diagnostics for outer split 3 
+2026-10-06 00:09:20 Fitting sequential estimator sdr 
+Loading required package: nnls
+2026-10-06 00:26:33 Fitting sequential estimator tmle 
+Warning in fwrite(result$errors, file.path(out, "estimator-errors.csv")) :
+  Input has no columns; creating an empty file at '/Users/ivan/Projects/cmbridge-work/cmbridge-tests/results/observed-history-corrected/ensemble-stability-v6/binary_longitudinal-n4000-seed5103006/estimator-errors.csv' and exiting.

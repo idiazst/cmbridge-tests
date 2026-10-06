@@ -1,0 +1,11 @@
+* checking for file ‘/Users/ivan/Projects/cmbridge-work/lmtp/DESCRIPTION’ ... OK
+* preparing ‘lmtp’:
+* checking DESCRIPTION meta-information ... OK
+* checking for LF line-endings in source and make files and shell scripts
+* checking for empty or unneeded directories
+Removed empty directory ‘lmtp/results/observed-history-corrected/ensemble-small-sample-debug’
+Removed empty directory ‘lmtp/results/observed-history-corrected’
+Removed empty directory ‘lmtp/results’
+Removed empty directory ‘lmtp/tests/testthat/_snaps’
+* building ‘lmtp_1.6.0.9021.tar.gz’
+

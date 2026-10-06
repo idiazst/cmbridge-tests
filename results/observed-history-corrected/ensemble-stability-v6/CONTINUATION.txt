@@ -1,1 +1,1 @@
-Waiting for complete SDR/TMLE checks and lmtp integration tests. Full study not started.
+Audits passed. Full study launched in /Users/ivan/Projects/cmbridge-work/cmbridge-tests/results/observed-history-corrected/full-ensemble-study-v2
