@@ -165,21 +165,37 @@ Based on observed processing times in each mechanism and sample size, the remain
 
 ## Conditional equations and estimation error
 
-For each outer training sample, evaluate its fitted functions over the complete generating distribution. The population error below is the expectation of its estimator contribution minus the true parameter. Average these expectations using the outer validation sample sizes, then average across completed replications. The sequential-regression and bridge contributions add to the population error. They describe fitted-function estimation error separately from variation in the final evaluation sample.
+These diagnostics evaluate each saved fitted contribution over the complete discrete population, then average outer training samples using their validation sample sizes. Outcome times are reported separately. The sequential and bridge/adjoint contributions add to the population error.
 
-| Mechanism | n | Estimator | Population error | Sequential-regression contribution | Bridge contribution |
-| --- | --- | --- | --- | --- | --- |
-| Two-time binary treatment |  500 | SDR | 0.00725 | 0.00832 | -0.00107 |
-| Two-time binary treatment |  500 | TMLE | -0.07693 | -0.07585 | -0.00107 |
-| Two-time binary treatment | 1000 | SDR | 0.10109 | 0.03346 | 0.06762 |
-| Two-time binary treatment | 1000 | TMLE | 0.10158 | 0.03396 | 0.06762 |
-| Two-time binary treatment | 4000 | SDR | -0.00321 | 0.00175 | -0.00496 |
-| Two-time binary treatment | 4000 | TMLE | 0.00872 | 0.01368 | -0.00496 |
-| Two-time numerical dose |  500 | SDR | -0.02118 | -0.00971 | -0.01147 |
-| Two-time numerical dose |  500 | TMLE | -0.01998 | -0.00851 | -0.01147 |
-| Two-time numerical dose | 1000 | SDR | -0.03326 | -0.02550 | -0.00776 |
-| Two-time numerical dose | 1000 | TMLE | -0.03331 | -0.02555 | -0.00776 |
-| Two-time numerical dose | 4000 | SDR | -0.00998 | -0.00935 | -0.00063 |
-| Two-time numerical dose | 4000 | TMLE | -0.01173 | -0.01109 | -0.00063 |
+TMLE targeting uses validation outcomes. Holding its final targeted functions fixed is a diagnostic calculation, not a conditional expectation given training data alone.
 
-The libraries contain the required functions. Coverage additionally depends on how accurately those functions are estimated. Sparse full-history combinations and regularization may affect finite-sample performance. The study retains this behavior and does not alter the generating distributions or learner settings in response to coverage.
+| Treatment | n | Outcome time | Estimator | Successful | Population error | Sequential contribution | Bridge/adjoint contribution |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Binary | 1000 | 2 | SDR | 2 | 0.008294 | 0.001693 | 0.006602 |
+| Binary | 1000 | 2 | TMLE | 2 | 0.007682 | 0.001081 | 0.006602 |
+| Binary | 1000 | 3 | SDR | 2 | 0.101086 | 0.033461 | 0.067625 |
+| Binary | 1000 | 3 | TMLE | 2 | 0.101583 | 0.033958 | 0.067625 |
+| Binary | 4000 | 2 | SDR | 1 | 0.000648 | 0.000072 | 0.000576 |
+| Binary | 4000 | 2 | TMLE | 1 | 0.000799 | 0.000223 | 0.000576 |
+| Binary | 4000 | 3 | SDR | 1 | -0.003211 | 0.001745 | -0.004956 |
+| Binary | 4000 | 3 | TMLE | 1 | 0.008722 | 0.013678 | -0.004956 |
+| Binary | 500 | 2 | SDR | 2 | -0.000486 | 0.004047 | -0.004533 |
+| Binary | 500 | 2 | TMLE | 2 | -0.001207 | 0.003326 | -0.004533 |
+| Binary | 500 | 3 | SDR | 2 | 0.007251 | 0.008325 | -0.001074 |
+| Binary | 500 | 3 | TMLE | 2 | -0.076925 | -0.075851 | -0.001074 |
+| Numerical dose | 1000 | 2 | SDR | 2 | -0.005064 | -0.000503 | -0.004562 |
+| Numerical dose | 1000 | 2 | TMLE | 2 | -0.005910 | -0.001348 | -0.004562 |
+| Numerical dose | 1000 | 3 | SDR | 2 | -0.033262 | -0.025505 | -0.007757 |
+| Numerical dose | 1000 | 3 | TMLE | 2 | -0.033306 | -0.025550 | -0.007757 |
+| Numerical dose | 4000 | 2 | SDR | 1 | -0.001934 | -0.001019 | -0.000915 |
+| Numerical dose | 4000 | 2 | TMLE | 1 | -0.002745 | -0.001830 | -0.000915 |
+| Numerical dose | 4000 | 3 | SDR | 1 | -0.009981 | -0.009346 | -0.000635 |
+| Numerical dose | 4000 | 3 | TMLE | 1 | -0.011729 | -0.011095 | -0.000635 |
+| Numerical dose | 500 | 2 | SDR | 2 | -0.004637 | 0.009197 | -0.013835 |
+| Numerical dose | 500 | 2 | TMLE | 2 | -0.011362 | 0.002473 | -0.013835 |
+| Numerical dose | 500 | 3 | SDR | 2 | -0.021179 | -0.009707 | -0.011471 |
+| Numerical dose | 500 | 3 | TMLE | 2 | -0.019982 | -0.008510 | -0.011471 |
+
+The fixed main-effect bridge classes contain a valid solution on the full support. The full-support saturated adjoint class also contains one, but the realized category dictionary learned from measured training rows need not contain an exact population solution. Its mean continuation for unseen categories is a finite-sample restriction. The [defining-equation and class audit](diagnostic-evaluation/REPORT.md) documents this limitation and actual estimator errors; it qualifies the previous claim that every fitted class contains the required function.
+
+[Population contributions by outcome time](population-error-by-outcome-time.csv) retain the numerical values. These ten Mac timing datasets are not pooled into the cloud study.

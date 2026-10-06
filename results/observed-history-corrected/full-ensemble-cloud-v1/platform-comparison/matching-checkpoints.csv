@@ -1,0 +1,5 @@
+job,seed,outer_splits_equal,learner_splits_equal,training_combination_counts_equal,cloud_seconds,local_seconds,cloud_fingerprint,local_fingerprint
+binary_longitudinal-n1000-r001.rds,5102001,TRUE,TRUE,TRUE,2257.077,1811.324,19bc7710acdf303f5937630fe07a7aad,446696f81bfcfb37ed203593a1131823
+binary_longitudinal-n1000-r002.rds,5102002,TRUE,TRUE,TRUE,2732.753,1733.59,19bc7710acdf303f5937630fe07a7aad,446696f81bfcfb37ed203593a1131823
+binary_longitudinal-n500-r001.rds,5101001,TRUE,TRUE,TRUE,3137.956,1892.156,19bc7710acdf303f5937630fe07a7aad,446696f81bfcfb37ed203593a1131823
+binary_longitudinal-n500-r002.rds,5101002,TRUE,TRUE,TRUE,3262.666,1922.508,19bc7710acdf303f5937630fe07a7aad,446696f81bfcfb37ed203593a1131823

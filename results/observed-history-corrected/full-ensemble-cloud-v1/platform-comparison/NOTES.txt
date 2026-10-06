@@ -1,0 +1,7 @@
+Only saved fits are compared; no models are refitted.
+Cloud and Mac results have separate fingerprints and are not pooled.
+Equal splits and training counts do not imply numerically identical fitted functions.
+Both platforms use R 4.5.2 but different operating systems and BLAS implementations.
+The prepared Linux library also has newer glmnet and SuperLearner versions than the local library.
+The cmbridge and modified lmtp source archives and installed versions are identical.
+Consult each session and dependency-version record before attributing a difference to a particular library.

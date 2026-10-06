@@ -35,6 +35,39 @@ writeLines(if(length(seen)==1200L)'All planned datasets have saved checkpoints.'
 if(length(seen)==1200L)writeLines(format(Sys.time(),tz='UTC',usetz=TRUE),file.path(outdir,'run-finished-at.txt'))
 for(script in c('summarize.R','write_reduced_report.R'))
   source(file.path(Sys.getenv('STUDY_SOURCE'),script),local=new.env(parent=globalenv()))
+# Correct the report's population-error table to retain outcome time. Fitting
+# sources stay frozen; these are postprocessing changes only.
+diagnostics<-fread(file.path(outdir,'population_diagnostics.csv'))
+if(nrow(diagnostics)) {
+  components<-c('population_bias','sequential_remainder','bridge_remainder')
+  per_dataset<-diagnostics[,lapply(.SD,function(z)sum(z*fold_weight)),
+    by=.(mechanism,n,replicate,seed,horizon,estimator,scenario),.SDcols=components]
+  population_means<-per_dataset[,c(list(successful=.N),lapply(.SD,mean)),
+    by=.(mechanism,n,horizon,estimator,scenario),.SDcols=components]
+  fwrite(population_means,file.path(outdir,'population-error-by-outcome-time.csv'))
+  report<-file.path(outdir,'REPORT.md')
+  previous<-paste(readLines(report),collapse='\n')
+  marker<-'## Conditional equations and estimation error'
+  stopifnot(length(strsplit(previous,marker,fixed=TRUE)[[1L]])==2L)
+  prefix<-strsplit(previous,marker,fixed=TRUE)[[1L]][1L]
+  rows<-vapply(seq_len(nrow(population_means)),function(i) {
+    z<-population_means[i]
+    sprintf('| %s | %d | %d | %s | %d | %.6f | %.6f | %.6f |',
+      if(z$mechanism=='binary_longitudinal')'Binary treatment'else'Numerical dose',
+      z$n,z$horizon+1L,toupper(z$estimator),z$successful,z$population_bias,
+      z$sequential_remainder,z$bridge_remainder)
+  },'')
+  writeLines(c(prefix,marker,'',
+    'Evaluate each saved fitted contribution over the complete discrete population, then average the outer training samples using their validation sample sizes. The two contributions add to the fixed-function population error. Outcome times are reported separately.',
+    '',
+    'For SDR this evaluates the expectation of contributions from the fitted nuisance functions. TMLE targeting uses validation outcomes, so holding its final targeted functions fixed is a diagnostic calculation, not a conditional expectation given training data alone.',
+    '',
+    '| Treatment | n | Outcome time | Estimator | Successful | Population error | Sequential contribution | Bridge/adjoint contribution |',
+    '| --- | --- | --- | --- | --- | --- | --- | --- |',rows,'',
+    'The full-support saturated adjoint class contains a valid solution. The implemented sieve dictionary uses measured training combinations and mean continuation for unseen values; its realized finite-sample class need not contain a population solution. The fixed main-effect bridge classes contain a valid solution on the full support. See the [saved Mac equation and class audit](https://github.com/idiazst/cmbridge-tests/blob/main/results/observed-history-corrected/full-ensemble-study-v2/diagnostic-evaluation/REPORT.md) for actual examples; those Mac estimates are not pooled into this cloud study.',
+    '',
+    '[Population values by outcome time](population-error-by-outcome-time.csv) retain the numerical calculations.'),report)
+}
 # Preserve the original conditional coverage and additionally count fit failures
 # as producing no interval. Pending datasets are not completed observations.
 summary<-fread(file.path(outdir,'summary.csv'))

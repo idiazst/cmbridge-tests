@@ -1,0 +1,13 @@
+Starting binary_longitudinal-n1000-r001 worker 4988
+Starting binary_longitudinal-n500-r008 worker 4989
+Starting binary_longitudinal-n4000-r014 worker 4990
+Starting binary_longitudinal-n1000-r021 worker 4991
+Loading required package: nnls
+Loading required package: nnls
+Loading required package: nnls
+Loading required package: nnls
+binary_longitudinal-n4000-r014 1956.8s OK
+binary_longitudinal-n1000-r021 2180.7s OK
+binary_longitudinal-n1000-r001 2257.1s OK
+binary_longitudinal-n500-r008 2258.2s OK
+Initial four-dataset checkpoint batch saved; the shard is incomplete.

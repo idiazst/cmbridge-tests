@@ -1,0 +1,10 @@
+Diagnostic evaluation of saved fitted functions; no nuisance fits were run.
+Fitted-ratio equations use population predictions of the final outer ratio fits.
+Actual adjoint training labels used nested out-of-sample ratio predictions; these are not asserted equal.
+Remainders use a selected valid true solution only to verify the defining identity.
+Adjoint target counts use measured training rows because fit_adjoint fits only on those rows.
+Conditioning-value counts and treatment/history target counts refer to different sets of variables.
+Class audits solve population linear equations algebraically, never fit nuisance functions to the sample.
+The observed dictionary audit includes the implemented mean continuation for unseen target values.
+It allows any valid adjoint solution, rather than requiring equality to a chosen reference solution.
+The maximum adjoint size is averaged across folds in the dataset table; see individual fold rows for each maximum.
