@@ -44,7 +44,34 @@ env:
   EXPECTED_LIBRARY_SHA256: bb15656be65f5c67754bb8bcc7ed91c3039eef682844e95aeab0b69105900cd6
 
 jobs:
+  recover-library:
+    if: inputs.preparation_release != ''
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    # GitHub limits draft-release visibility to identities with push access.
+    # Only this archive-reading job needs that scope; fitting jobs stay read-only.
+    permissions:
+      contents: write
+      actions: read
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PREPARATION_RELEASE: ${{ inputs.preparation_release }}
+    steps:
+      - name: Recover and verify the byte-identical original dependency archive
+        run: |
+          mkdir -p cloud-preparation
+          gh release download "$PREPARATION_RELEASE" --repo "$GITHUB_REPOSITORY" --pattern 'cloud-library.*' --dir cloud-preparation
+          cd cloud-preparation
+          printf '%s  cloud-library.tar.gz\n' "$EXPECTED_LIBRARY_SHA256" | sha256sum -c -
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cloud-preparation-${{ inputs.study_run }}
+          path: cloud-preparation/
+          retention-days: 7
+          if-no-files-found: error
   resume:
+    needs: recover-library
+    if: ${{ always() && (needs.recover-library.result == 'success' || needs.recover-library.result == 'skipped') }}
     runs-on: ubuntu-24.04
     timeout-minutes: 360
     strategy:
@@ -66,19 +93,11 @@ jobs:
           r-version: '4.5.2'
           use-public-rspm: true
       - uses: actions/download-artifact@v4
-        if: inputs.preparation_release == ''
         with:
           name: cloud-preparation-${{ inputs.study_run }}
-          run-id: ${{ inputs.study_run }}
+          run-id: ${{ inputs.preparation_release != '' && github.run_id || inputs.study_run }}
           github-token: ${{ github.token }}
           path: cloud-preparation
-      - name: Recover the exact original library when its artifact has expired
-        if: inputs.preparation_release != ''
-        run: |
-          mkdir -p cloud-preparation
-          gh release download "$PREPARATION_RELEASE" --repo "$GITHUB_REPOSITORY" --pattern 'cloud-library.*' --dir cloud-preparation
-          cd cloud-preparation
-          printf '%s  cloud-library.tar.gz\n' "$EXPECTED_LIBRARY_SHA256" | sha256sum -c -
       - name: Verify original sources and exact dependency library
         run: |
           cd "$FROZEN_ROOT"
