@@ -13,6 +13,11 @@ on:
         default: '37417223244'
         required: true
         type: string
+      preparation_release:
+        description: Optional draft-release tag holding the byte-identical original dependency archive after artifact expiry
+        default: ''
+        required: false
+        type: string
       shards:
         description: JSON array of unfinished shard numbers (1 through 40)
         default: '[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40]'
@@ -36,6 +41,7 @@ env:
   CLOUD_DISPATCHER: ${{ github.workspace }}/simulations/observed_history_corrected/run_cloud_shard.R
   SIM_WORKERS: '4'
   SIM_SHARDS: '40'
+  EXPECTED_LIBRARY_SHA256: bb15656be65f5c67754bb8bcc7ed91c3039eef682844e95aeab0b69105900cd6
 
 jobs:
   resume:
@@ -51,6 +57,7 @@ jobs:
       SIM_OUTPUT: ${{ github.workspace }}/cloud-shard-output
       ORIGINAL_STUDY_RUN: ${{ inputs.study_run }}
       CHECKPOINT_RUNS: ${{ inputs.checkpoint_runs }}
+      PREPARATION_RELEASE: ${{ inputs.preparation_release }}
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
@@ -59,11 +66,19 @@ jobs:
           r-version: '4.5.2'
           use-public-rspm: true
       - uses: actions/download-artifact@v4
+        if: inputs.preparation_release == ''
         with:
           name: cloud-preparation-${{ inputs.study_run }}
           run-id: ${{ inputs.study_run }}
           github-token: ${{ github.token }}
           path: cloud-preparation
+      - name: Recover the exact original library when its artifact has expired
+        if: inputs.preparation_release != ''
+        run: |
+          mkdir -p cloud-preparation
+          gh release download "$PREPARATION_RELEASE" --repo "$GITHUB_REPOSITORY" --pattern 'cloud-library.*' --dir cloud-preparation
+          cd cloud-preparation
+          printf '%s  cloud-library.tar.gz\n' "$EXPECTED_LIBRARY_SHA256" | sha256sum -c -
       - name: Verify original sources and exact dependency library
         run: |
           cd "$FROZEN_ROOT"
@@ -125,7 +140,7 @@ jobs:
         with:
           name: cloud-resume-${{ github.run_id }}-${{ matrix.shard }}
           path: cloud-shard-output/
-          retention-days: 1
+          retention-days: 7
           if-no-files-found: error
       - name: Require completed shard
         if: steps.compute.outcome != 'success'
