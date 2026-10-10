@@ -1,2 +1,0 @@
-scale,loss,grid_round,selected,failed,failure,scored_rows,paired_rows,informative,fold,bridge_specification,fit_key,horizon,fitting_n,candidate,mechanism,n,replicate,seed
-1e-12,Inf,2,FALSE,TRUE,scoring requires finite residuals on a nonempty validation sample.,27,10,TRUE,2,1,d7a8833b235ad9fc9f8ecadbad9664e2,1,55,sieve_md,discrete_dose,4000,6,5203006

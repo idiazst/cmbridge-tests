@@ -1,3 +1,0 @@
-fold,bridge_specification,fit_key,horizon,fitting_n,candidate,scope,failure_training_n,error,mechanism,n,replicate,seed
-1,1,93839cc989dd7c219c335439af11ce4e,2,55,sieve_md,validation fold 2,28,Nonfinite validation predictions.,discrete_dose,4000,6,5203006
-3,1,77e0e4a3bda136169a4fd209f79b2ca8,2,55,sieve_md,validation fold 2,28,Nonfinite validation predictions.,discrete_dose,4000,6,5203006

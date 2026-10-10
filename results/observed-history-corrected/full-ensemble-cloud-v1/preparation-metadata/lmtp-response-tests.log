@@ -1,8 +1,0 @@
-bridge-response-cv: .......WW..................
-
-══ Warnings ════════════════════════════════════════════════════════════════════
-1. upstream fits for candidate training responses exclude its learner validation outcomes ('test-bridge-response-cv.R:58:3') - Passing 'thresh' to glmnet() is deprecated. Use control = list(thresh = ...) instead.
-
-2. upstream fits for candidate training responses exclude its learner validation outcomes ('test-bridge-response-cv.R:58:3') - Passing 'maxit' to glmnet() is deprecated. Use control = list(maxit = ...) instead.
-
-══ DONE ════════════════════════════════════════════════════════════════════════

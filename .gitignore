@@ -1,5 +1,6 @@
 .DS_Store
-.Rhistory
-.RData
-.Ruserdata
-_cmbridge_package/
+Rplots.pdf
+# Temporary local compatibility paths for the active migrated MI study.
+results/
+simulations/
+reports/

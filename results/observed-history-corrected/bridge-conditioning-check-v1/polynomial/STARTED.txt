@@ -1,4 +1,0 @@
-2026-10-06 07:36:26 UTC
-PID 98771
-basis polynomial seed 5103002 outer_training_sample 1
-Separate diagnostic; no known-function fits or zero-penalty fits.

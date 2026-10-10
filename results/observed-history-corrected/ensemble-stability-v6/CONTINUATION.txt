@@ -1,1 +1,0 @@
-Audits passed. Full study launched in /Users/ivan/Projects/cmbridge-work/cmbridge-tests/results/observed-history-corrected/full-ensemble-study-v2

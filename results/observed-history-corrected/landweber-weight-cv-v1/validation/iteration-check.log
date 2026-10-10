@@ -1,9 +1,0 @@
-   maximum_prediction_change elapsed_seconds previous_iterations new_iterations
-                       <num>           <num>               <int>          <int>
-1:              0.0002785832           0.502                2000           2196
-   previous_gradient new_gradient previous_tolerance_reached
-               <num>        <num>                     <lgcl>
-1:      4.101376e-10 1.997157e-10                      FALSE
-   new_tolerance_reached weight_ridge   tol
-                  <lgcl>        <num> <num>
-1:                  TRUE     562.3413 1e-10

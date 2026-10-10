@@ -1,7 +1,0 @@
-candidate,weight,basis
-sieve_md,0.302088046611954,polynomial
-landweber,0.317003693244307,polynomial
-pmmr,0.380908260143739,polynomial
-sieve_md,0.396429787124936,joint-categories
-landweber,0.199996856759786,joint-categories
-pmmr,0.403573356115278,joint-categories

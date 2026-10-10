@@ -1,2 +1,0 @@
-fold,bridge_specification,fit_key,horizon,fitting_n,candidate,scope,failure_training_n,error,mechanism,n,replicate,seed
-2,1,bdb2fe484f53b2cbddf338ba42ef46e2,1,56,sieve_md,validation fold 2,28,Penalty grid has a boundary minimum after 16 extensions; no interior penalty was accepted.,binary_longitudinal,4000,6,5103006

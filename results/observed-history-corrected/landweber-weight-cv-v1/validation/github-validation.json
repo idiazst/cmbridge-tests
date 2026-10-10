@@ -1,7 +1,0 @@
-{
-  "run_id": 37438851685,
-  "package_commit": "847e187026ab5a68c456db0f9d49496ff7a869fc",
-  "outcomes": "github_run_id=37438851685\nunit_outcome=success\nlinked_outcome=success\nbridge_outcome=success\nadjoint_outcome=success\nensemble_outcome=success\n",
-  "status": "completed",
-  "conclusion": "success"
-}

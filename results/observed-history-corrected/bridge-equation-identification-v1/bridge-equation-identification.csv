@@ -1,5 +1,0 @@
-mechanism,outcome_time,conditioning_combinations,target_combinations,polynomial_columns,polynomial_operator_rank,full_conditional_operator_rank,landweber_main_target_rank,polynomial_moment_jacobian_rank_for_main_target,reference_full_equation_max_error,alternative_polynomial_moment_max_error,alternative_full_equation_rmse,alternative_full_equation_max_error,alternative_minimum,alternative_maximum,target_class_representation_max_error
-binary_longitudinal,2,8,8,10,4,8,4,4,4.44089209850063e-16,5.55111512312578e-16,0.0627377843405539,0.104423163609982,1.38264607974893,3.24119794590358,0
-binary_longitudinal,3,136,144,18,9,136,9,9,2.22044604925031e-16,4.44089209850063e-16,0.0564248002707913,0.14886793804561,1.59959344479688,3.34206831800007,0
-discrete_dose,2,16,8,10,4,8,4,4,1.33226762955019e-15,2.22044604925031e-16,0.0443781925856637,0.10495110967091,1.59377877065072,3.52763534956768,0
-discrete_dose,3,528,288,18,9,272,9,9,4.44089209850063e-16,8.88178419700125e-16,0.0362169660635186,0.14886793804561,1.60499680190536,3.34094735194739,0

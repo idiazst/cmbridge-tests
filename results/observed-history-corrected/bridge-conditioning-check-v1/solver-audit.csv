@@ -1,7 +1,0 @@
-basis,candidate,recorded_convergence,coefficient_gradient,final_loss,criterion
-polynomial,sieve_md,TRUE,2.25414237832932e-06,0.00935592306396782,converged
-polynomial,landweber,TRUE,1.94370371384336e-10,1.74044708873209e-19,stopped_by_tolerance
-polynomial,pmmr,TRUE,3.5888868046758e-08,0.000252837617815999,converged
-joint-categories,sieve_md,TRUE,6.02235740198568e-06,0.0245041675247466,converged
-joint-categories,landweber,TRUE,5.4596784732075e-10,0.0473912488908046,stopped_by_tolerance
-joint-categories,pmmr,TRUE,3.5888868046758e-08,0.000252837617815999,converged

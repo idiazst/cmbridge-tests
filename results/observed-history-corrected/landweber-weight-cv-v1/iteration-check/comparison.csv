@@ -1,2 +1,0 @@
-maximum_prediction_change,elapsed_seconds,previous_iterations,new_iterations,previous_gradient,new_gradient,previous_tolerance_reached,new_tolerance_reached,weight_ridge,tol
-0.00027858320395957,0.502,2000,2196,4.10137623396512e-10,1.99715744362853e-10,FALSE,TRUE,562.341325190349,1e-10

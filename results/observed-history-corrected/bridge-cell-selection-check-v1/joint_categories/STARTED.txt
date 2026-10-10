@@ -1,4 +1,0 @@
-2026-10-06 08:00:23 UTC
-PID 99829
-conditioning_basis joint_categories seed 5103002 outer_training_sample 1
-Cell U-statistic for penalty CV and ensemble; no known-function or zero-penalty fits.

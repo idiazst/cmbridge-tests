@@ -1,7 +1,0 @@
-configuration,learner_sample,rows,cells,singleton_cells,paired_rows
-Cell; Additive,1,889,83,14,875
-Cell; Additive,2,889,95,22,867
-Cell; Additive,3,888,88,23,865
-Cell; Joint categories,1,889,83,14,875
-Cell; Joint categories,2,889,95,22,867
-Cell; Joint categories,3,888,88,23,865

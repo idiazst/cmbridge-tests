@@ -1,2 +1,0 @@
-shoving 'interior' knots matching boundary knots to inside
-all interior knots match left boundary knot
